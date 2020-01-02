@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    font-family: "Open Sans";
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 3.25rem;
+    line-height: 1.6;
+  }
+}
+
+a {
+    color: $color-primary-magenta;
+    text-decoration: none;
+}
+
+// Body text
+// -------------------------
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
