@@ -1,0 +1,6 @@
+<template data-sly-template.item="${@ item='The navigation item'}"
+          data-sly-use.groupTemplate="group.html">
+        <a href="${item.URL}" title="${item.title}" aria-current="${item.active && 'page'}"
+           class="beej-header__nav-item beej-header__nav-item--level-${item.level}${item.active ? ' beej-header__nav-item--active' : ''}">${item.title}</a>
+        <sly data-sly-test="${item.children.size > 0}" data-sly-call="${groupTemplate.group @ items = item.children}"></sly>
+</template>
