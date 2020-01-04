@@ -22,44 +22,7 @@
 
 <link rel="stylesheet" href="/etc.clientlibs/beej/clientlibs/clientlib-base.css" type="text/css">
 
-
-
-
-
-
-<!--cq{"decorated":false,"type":"granite/contexthub/components/contexthub","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/contexthub","structurePath":"/content/beej/us/en/blog/blog-article-1/jcr:content/contexthub","selectors":null,"servlet":"Script /libs/granite/contexthub/components/contexthub/contexthub.jsp","totalTime":1,"selfTime":1}-->
-
-
-
-
-
-<link rel="stylesheet" href="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.css" type="text/css">
-<link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/main.css" type="text/css">
-<script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/messaging.js"></script>
-<script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/utils.js"></script>
-<script type="text/javascript" src="/libs/granite/author/deviceemulator/clientlibs.js"></script>
-<script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/wcm/foundation/clientlibs/main.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.js"></script>
-
-
-
-
-
-
-<!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/header","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/cloudconfig-header","structurePath":"/content/beej/us/en/blog/blog-article-1/jcr:content/cloudconfig-header","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/header/header.html","totalTime":1,"selfTime":1}-->
-
-
-
-
-
-
-
-
+    
 </head>
     <body class="page basicpage">
 
@@ -69,9 +32,6 @@
 
 
 <script type="text/javascript" src="/etc.clientlibs/core/wcm/components/page/v2/page/clientlibs/site/sharing.js"></script>
-
-
-
 
 
 <div class="root responsivegrid">
@@ -92,89 +52,27 @@
 
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
 
-    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
-
-
-<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
-
-    <div class="image aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
-<div data-cmp-is="image" data-cmp-lazy data-cmp-src="/content/experience-fragments/beej/us/en/site/header/master/_jcr_content/root/responsivegrid/responsivegrid_574124880/image.coreimg{.width}.svg/1577918381913/beej-logo.svg" data-asset="/content/dam/beej/beej-logo.svg" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
-
-        <noscript data-cmp-hook-image="noscript">
-
-            <img src="/content/experience-fragments/beej/us/en/site/header/master/_jcr_content/root/responsivegrid/responsivegrid_574124880/image.coreimg.svg/1577918381913/beej-logo.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
-
-        </noscript>
-
-
-
-</div>
-
-
-</div>
-<div class="nav navigation aem-GridColumn aem-GridColumn--default--12"><nav class="beej-head__nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    <div class="beej-header__nav-items">
-
-        <a href="/content/beej/us/en.html" title="Home" aria-current="page" class="beej-header__nav-item beej-header__nav-item--level-0 beej-header__nav-item--active">Home</a>
-
-    <div class="beej-header__nav-items">
-
-        <a href="/content/beej/us/en/about.html" title="About" class="beej-header__nav-item beej-header__nav-item--level-1">About</a>
-
-
-
-
-        <a href="/content/beej/us/en/products.html" title="Products" class="beej-header__nav-item beej-header__nav-item--level-1">Products</a>
-
-
-
-
-        <a href="/content/beej/us/en/blog.html" title="Blog" aria-current="page" class="beej-header__nav-item beej-header__nav-item--level-1 beej-header__nav-item--active">Blog</a>
-
-
-
-
-        <a href="/content/beej/us/en/portfolio.html" title="Portfolio" class="beej-header__nav-item beej-header__nav-item--level-1">Portfolio</a>
-
-
+    <div class="header aem-GridColumn aem-GridColumn--default--12"><header class="beej-header">
+    <div class="beej-header__container margins">
+        <a class="beej-header__logo">
+            <img class="beej-header__logo-img" src="/content/dam/beej/beej-logo.svg"/>
+        </a>
+        <!--   TODO:  include nav  <sly data-sly-resource="nav"></sly> -->
+        <nav class="beej-header__nav">
+            <div class="beej-header__nav-items">
+                <a href="#" class="beej-header__nav-item">Home</a>
+                <a href="#" class="beej-header__nav-item">About</a>
+                <a href="#" class="beej-header__nav-item">Products</a>
+                <a href="#" class="beej-header__nav-item">Blog</a>
+                <a href="#" class="beej-header__nav-item">Portfolio</a>
+            </div>
+        </nav>
+        <button class="beej-header__menu-button">
+            <img class="beej-header__menu-button-icon beej-header__menu-button-icon--menu" src="/content/dam/beej/menu-icon.svg"/>
+            <img class="beej-header__menu-button-icon beej-header__menu-button-icon--closed" src="/content/dam/beej/close-icon.svg"/>
+        </button>
     </div>
-
-
-    </div>
-</nav>
-
-
-</div>
-<div class="search aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
-<section class="cmp-search" role="search" data-cmp-is="search" data-cmp-min-length="3" data-cmp-results-size="10">
-    <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="/content/beej/us/en/blog/blog-article-1.searchresults.json/_jcr_content/root/responsivegrid/responsivegrid_574124880/search" autocomplete="off">
-        <div class="cmp-search__field">
-            <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
-            <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
-            <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false"/>
-            <button class="cmp-search__clear" data-cmp-hook-search="clear">
-                <i class="cmp-search__clear-icon"></i>
-            </button>
-        </div>
-    </form>
-    <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
-
-<script data-cmp-hook-search="itemTemplate" type="x-template">
-    <a class="cmp-search__item" data-cmp-hook-search="item">
-        <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
-    </a>
-</script>
-</section></div>
-
-
-</div>
-</div>
-<div class="ghost aem-GridColumn aem-GridColumn--default--12">
-<div class="cq-placeholder " data-emptytext="Placeholder for a deleted inherited Component"></div>
-</div>
-<div class="ghost aem-GridColumn aem-GridColumn--default--12">
-<div class="cq-placeholder " data-emptytext="Placeholder for a deleted inherited Component"></div>
-</div>
+</header></div>
 
 
 </div>
@@ -186,7 +84,6 @@
 </div></div>
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/experiencefragment","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/experiencefragment-header","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/experiencefragment-header","selectors":null,"servlet":"Script /apps/core/wcm/components/experiencefragment/v1/experiencefragment/experiencefragment.html","totalTime":19,"selfTime":19}-->
 </div>
 <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
 
@@ -194,7 +91,7 @@
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
 
     <div class="image aem-GridColumn aem-GridColumn--default--12">
-<div data-cmp-is="image" data-cmp-src="/content/beej/us/en/blog/blog-article-1/_jcr_content/root/responsivegrid/image.coreimg{.width}.jpeg/1577925676742/placeholder-img.jpeg" data-asset="/content/dam/beej/placeholder-img.jpg" data-asset-id="bf1131fd-2a83-4bbe-9dec-21ec7cfbbe4f" data-title="alt" class="cmp-image cq-dd-image" itemscope itemtype="http://schema.org/ImageObject">
+<div data-cmp-is="image" data-cmp-src="/content/beej/us/en/blog/blog-article-1/_jcr_content/root/responsivegrid/image.coreimg{.width}.jpeg/1577925676742/placeholder-img.jpeg" data-asset="/content/dam/beej/placeholder-img.jpg" data-asset-id="bf1131fd-2a83-4bbe-9dec-21ec7cfbbe4f" data-title="alt" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
 
 
 
@@ -207,8 +104,6 @@
 </div>
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/image","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image","selectors":null,"servlet":"Script /apps/core/wcm/components/image/v2/image/image.html","totalTime":1,"selfTime":1}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/image/v2/image/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/image/v2/image/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/image/v2/image/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/image/v2/image/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/image/policy_111937659673030?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Fimage%2Fv2%2Fimage%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fimage&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Fimage&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Fimage%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fimage&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937659673030&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Fimage%2Fpolicy_111937659673030&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/image/v2/image/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/image&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/image&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/image&quot;,&quot;editConfig&quot;:{&quot;dropTarget&quot;:[{&quot;id&quot;:&quot;image&quot;,&quot;name&quot;:&quot;./fileReference&quot;,&quot;accept&quot;:[&quot;image/gif&quot;,&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;,&quot;image/svg\\+xml&quot;],&quot;groups&quot;:[&quot;media&quot;],&quot;params&quot;:{&quot;./imageRotate&quot;:&quot;&quot;,&quot;./imageMap&quot;:&quot;&quot;,&quot;./sling:resourceType&quot;:&quot;beej/components/content/image&quot;,&quot;./imageCrop&quot;:&quot;&quot;}}],&quot;inplaceEditingConfig&quot;:{&quot;active&quot;:true,&quot;editorType&quot;:&quot;image&quot;,&quot;configPath&quot;:&quot;/apps/beej/components/content/image/cq:editConfig/cq:inplaceEditing/config&quot;},&quot;structure&quot;:true},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;plugins&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;crop&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;*&quot;,&quot;supportedMimeTypes&quot;:[&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;],&quot;aspectRatios&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;wideLandscape&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;name&quot;:&quot;Wide Landscape&quot;,&quot;ratio&quot;:&quot;0.6180&quot;},&quot;landscape&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;name&quot;:&quot;Landscape&quot;,&quot;ratio&quot;:&quot;0.8284&quot;},&quot;square&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;name&quot;:&quot;Square&quot;,&quot;ratio&quot;:&quot;1&quot;},&quot;portrait&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;name&quot;:&quot;Portrait&quot;,&quot;ratio&quot;:&quot;1.6180&quot;}}},&quot;flip&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;-&quot;,&quot;supportedMimeTypes&quot;:[&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;]},&quot;map&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;*&quot;,&quot;supportedMimeTypes&quot;:[&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;,&quot;image/svg+xml&quot;]},&quot;rotate&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;*&quot;,&quot;supportedMimeTypes&quot;:[&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;]},&quot;zoom&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;*&quot;,&quot;supportedMimeTypes&quot;:[&quot;image/jpeg&quot;,&quot;image/png&quot;,&quot;image/webp&quot;,&quot;image/tiff&quot;]}},&quot;ui&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;inline&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;toolbar&quot;:[&quot;crop#launch&quot;,&quot;rotate#right&quot;,&quot;history#undo&quot;,&quot;history#redo&quot;,&quot;fullscreen#fullscreen&quot;,&quot;control#close&quot;,&quot;control#finish&quot;],&quot;replacementToolbars&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;crop&quot;:[&quot;crop#identifier&quot;,&quot;crop#unlaunch&quot;,&quot;crop#confirm&quot;]}},&quot;fullscreen&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;toolbar&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;left&quot;:[&quot;crop#launchwithratio&quot;,&quot;rotate#right&quot;,&quot;flip#horizontal&quot;,&quot;flip#vertical&quot;,&quot;zoom#reset100&quot;,&quot;zoom#popupslider&quot;],&quot;right&quot;:[&quot;history#undo&quot;,&quot;history#redo&quot;,&quot;fullscreen#fullscreenexit&quot;]},&quot;replacementToolbars&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;crop&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;left&quot;:[&quot;crop#identifier&quot;],&quot;right&quot;:[&quot;crop#unlaunch&quot;,&quot;crop#confirm&quot;]},&quot;map&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;left&quot;:[&quot;map#rectangle&quot;,&quot;map#circle&quot;,&quot;map#polygon&quot;],&quot;right&quot;:[&quot;map#unlaunch&quot;,&quot;map#confirm&quot;]}}}}},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/image&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/image&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/image&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
 </div>
 <div class="breadcrumb aem-GridColumn aem-GridColumn--default--12">
 <nav class="cmp-breadcrumb" aria-label="Breadcrumb">
@@ -230,7 +125,6 @@
 </nav>
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/breadcrumb","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/breadcrumb","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/responsivegrid/breadcrumb","selectors":null,"servlet":"Script /apps/core/wcm/components/breadcrumb/v2/breadcrumb/breadcrumb.html","totalTime":1,"selfTime":1}-->
 </div>
 <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
 
@@ -244,8 +138,6 @@
 
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/title","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title","selectors":null,"servlet":"Script /apps/core/wcm/components/title/v2/title/title.html","totalTime":1,"selfTime":1}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/title/policy_111937668386208?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Ftitle%2Fv2%2Ftitle%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Ftitle&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Ftitle&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Ftitle%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Fbeej%2Fcomponents%2Fcontent%2Ftitle&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937668386208&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Ftitle%2Fpolicy_111937668386208&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/title&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid/beej/components/content/title&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/title&quot;,&quot;editConfig&quot;:{&quot;inplaceEditingConfig&quot;:{&quot;active&quot;:true,&quot;editorType&quot;:&quot;title&quot;,&quot;configPath&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:editConfig/cq:inplaceEditing/inplaceEditingConfig&quot;}},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;titleTag&quot;:[&quot;h1&quot;,&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;,&quot;h5&quot;,&quot;h6&quot;]},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
 </div>
 <div class="title aem-GridColumn aem-GridColumn--default--7">
 <div class="cmp-title">
@@ -254,27 +146,16 @@
 
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/title","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734","selectors":null,"servlet":"Script /apps/core/wcm/components/title/v2/title/title.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/title/policy_111937672105760?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Ftitle%2Fv2%2Ftitle%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Ftitle_504667734&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Ftitle&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Ftitle%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Fbeej%2Fcomponents%2Fcontent%2Ftitle&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937672105760&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Ftitle%2Fpolicy_111937672105760&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/title&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid/beej/components/content/title&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/title&quot;,&quot;editConfig&quot;:{&quot;inplaceEditingConfig&quot;:{&quot;active&quot;:true,&quot;editorType&quot;:&quot;title&quot;,&quot;configPath&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:editConfig/cq:inplaceEditing/inplaceEditingConfig&quot;}},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;titleTag&quot;:[&quot;h1&quot;,&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;,&quot;h5&quot;,&quot;h6&quot;]},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/title_504667734&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
 </div>
 <div class="text aem-GridColumn aem-GridColumn--default--7">
 
 
-    <div class="cq-placeholder cmp-text" data-emptytext="Text"></div>
 
-<!--cq{"decorated":true,"type":"beej/components/content/text","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text","selectors":null,"servlet":"Script /apps/core/wcm/components/text/v2/text/text.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/text/v2/text/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/text/v2/text/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/text/v2/text/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/text/v2/text/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/text/policy_111937675886633?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Ftext%2Fv2%2Ftext%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Ftext&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Ftext&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Ftext%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid%2Fbeej%2Fcomponents%2Fcontent%2Ftext&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937675886633&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Ftext%2Fpolicy_111937675886633&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/text/v2/text/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/text&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid/beej/components/content/text&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/text&quot;,&quot;editConfig&quot;:{&quot;inplaceEditingConfig&quot;:{&quot;active&quot;:true,&quot;editorType&quot;:&quot;text&quot;,&quot;configPath&quot;:&quot;/apps/core/wcm/components/text/v2/text/cq:editConfig/cq:inplaceEditing/inplaceEditingConfig&quot;}},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;rtePlugins&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;tracklinks&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;*&quot;},&quot;table&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;-&quot;,&quot;hiddenHeaderConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;hiddenHeaderClassName&quot;:&quot;cq-wcm-foundation-aria-visuallyhidden&quot;}},&quot;paraformat&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;formats&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;default_p&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Paragraph&quot;,&quot;tag&quot;:&quot;p&quot;},&quot;default_h1&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 1&quot;,&quot;tag&quot;:&quot;h1&quot;},&quot;default_h2&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 2&quot;,&quot;tag&quot;:&quot;h2&quot;},&quot;default_h3&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 3&quot;,&quot;tag&quot;:&quot;h3&quot;},&quot;default_h4&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 4&quot;,&quot;tag&quot;:&quot;h4&quot;},&quot;default_h5&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 5&quot;,&quot;tag&quot;:&quot;h5&quot;},&quot;default_h6&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Heading 6&quot;,&quot;tag&quot;:&quot;h6&quot;},&quot;default_blockquote&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Quote&quot;,&quot;tag&quot;:&quot;blockquote&quot;},&quot;default_hr&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Horizontal Rule (visual line break)&quot;,&quot;tag&quot;:&quot;hr&quot;},&quot;default_pre&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;description&quot;:&quot;Preformatted&quot;,&quot;tag&quot;:&quot;pre&quot;}}},&quot;misctools&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;specialCharsConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;chars&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;default_copyright&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;entity&quot;:&quot;&amp;copy;&quot;,&quot;name&quot;:&quot;copyright&quot;},&quot;default_euro&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;entity&quot;:&quot;&amp;euro;&quot;,&quot;name&quot;:&quot;euro&quot;},&quot;default_registered&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;entity&quot;:&quot;&amp;reg;&quot;,&quot;name&quot;:&quot;registered&quot;},&quot;default_trademark&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;entity&quot;:&quot;&amp;trade;&quot;,&quot;name&quot;:&quot;trademark&quot;}}}},&quot;links&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;modifylink,unlink&quot;},&quot;justify&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;-&quot;},&quot;format&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;features&quot;:&quot;bold,italic&quot;}}},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/text&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
-
-    <div class="new newpar section aem-Grid-newComponent">
-
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid/new","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*","selectors":null,"servlet":"Script /libs/wcm/foundation/components/parsys/newpar/newpar.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*.html&quot;,&quot;type&quot;:&quot;wcm/foundation/components/responsivegrid/new&quot;,&quot;isResponsiveGrid&quot;:false,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/new|newpar&quot;,&quot;editConfig&quot;:{&quot;actions&quot;:[null,&quot;CQ.wcm.EditBase.INSERT&quot;],&quot;disableTargeting&quot;:true},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid/*&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:false,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
 
 </div>
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid","selectors":null,"servlet":"Script /libs/wcm/foundation/components/responsivegrid/responsivegrid.html","totalTime":19,"selfTime":18}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid.html&quot;,&quot;designDialog&quot;:&quot;/libs/wcm/foundation/components/responsivegrid/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/libs/wcm/foundation/components/responsivegrid/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/wcm/foundation/components/responsivegrid/policy_37338445714815?dialog=%2Flibs%2Fwcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid&amp;policyContentResourceType=wcm%2Ffoundation%2Fcomponents%2Fresponsivegrid&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fwcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_37338445714815&amp;policyRelativePath=wcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2Fpolicy_37338445714815&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/libs/wcm/foundation/components/responsivegrid/design_dialog&quot;,&quot;hasPolicyMapping&quot;:true,&quot;type&quot;:&quot;wcm/foundation/components/responsivegrid&quot;,&quot;isResponsiveGrid&quot;:true,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid&quot;,&quot;isContainer&quot;:true,&quot;editConfig&quot;:{&quot;listeners&quot;:{&quot;afterchildinsert&quot;:&quot;function(editable){Granite.author.responsive.EditableActions.REFRESH.execute(editable)}&quot;},&quot;structure&quot;:true},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;jcr:title&quot;:&quot;BEEJ Content&quot;,&quot;jcr:lastModifiedBy&quot;:&quot;admin&quot;,&quot;components&quot;:[&quot;/libs/wcm/foundation/components/responsivegrid&quot;,&quot;group:BEEJ.Content&quot;],&quot;jcr:lastModified&quot;:&quot;java.util.GregorianCalendar[time=1577919288869,areFieldsSet=true,areAllFieldsSet=true,lenient=false,zone=sun.util.calendar.ZoneInfo[id=\&quot;GMT-07:00\&quot;,offset=-25200000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=0,WEEK_OF_YEAR=1,WEEK_OF_MONTH=1,DAY_OF_MONTH=1,DAY_OF_YEAR=1,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=1,AM_PM=1,HOUR=3,HOUR_OF_DAY=15,MINUTE=54,SECOND=48,MILLISECOND=869,ZONE_OFFSET=-25200000,DST_OFFSET=0]&quot;,&quot;sling:resourceType&quot;:&quot;wcm/core/components/policy/policy&quot;,&quot;jcr:content&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;}},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1},&quot;responsive&quot;:{&quot;default&quot;:{&quot;offset&quot;:&quot;0&quot;,&quot;width&quot;:&quot;7&quot;,&quot;behavior&quot;:null},&quot;phone&quot;:{&quot;offset&quot;:&quot;0&quot;,&quot;width&quot;:&quot;12&quot;,&quot;behavior&quot;:null}}}"></cq>
+
+
+</div>
 </div>
 <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--1">
 
@@ -288,8 +169,6 @@
 
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/title","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title","selectors":null,"servlet":"Script /apps/core/wcm/components/title/v2/title/title.html","totalTime":1,"selfTime":1}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/title/v2/title/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/title/policy_111937692342470?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Ftitle%2Fv2%2Ftitle%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Ftitle&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Ftitle&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Ftitle%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fbeej%2Fcomponents%2Fcontent%2Ftitle&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937692342470&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Ftitle%2Fpolicy_111937692342470&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/title&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621/beej/components/content/title&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/title&quot;,&quot;editConfig&quot;:{&quot;inplaceEditingConfig&quot;:{&quot;active&quot;:true,&quot;editorType&quot;:&quot;title&quot;,&quot;configPath&quot;:&quot;/apps/core/wcm/components/title/v2/title/cq:editConfig/cq:inplaceEditing/inplaceEditingConfig&quot;}},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;titleTag&quot;:[&quot;h1&quot;,&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;,&quot;h5&quot;,&quot;h6&quot;]},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/title&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
 </div>
 <div class="sharing aem-GridColumn aem-GridColumn--default--3">
 
@@ -297,40 +176,25 @@
 
 <div class="fb-share-button" data-href="http://localhost:4503/content/beej/us/en/blog/blog-article-1.html" data-layout="button_count" data-size="small" data-mobile-iframe="false">
 </div>
-<a data-pin-do="buttonPin" data-pin-count="beside" data-pin-save="true" data-pin-media="http://localhost:4503/content/beej/us/en/blog/blog-article-1.thumb.800.480.png?ck=1577929242" href="https://www.pinterest.com/pin/create/button/"></a><!--cq{"decorated":true,"type":"beej/components/content/sharing","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing","selectors":null,"servlet":"Script /apps/core/wcm/components/sharing/v1/sharing/sharing.html","totalTime":1,"selfTime":1}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing.html&quot;,&quot;type&quot;:&quot;beej/components/content/sharing&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621/beej/components/content/sharing&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/sharing&quot;,&quot;editConfig&quot;:{&quot;listeners&quot;:{&quot;afterinsert&quot;:&quot;REFRESH_PAGE&quot;}},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/sharing&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
+<a data-pin-do="buttonPin" data-pin-count="beside" data-pin-save="true" data-pin-media="http://localhost:4503/content/beej/us/en/blog/blog-article-1.thumb.800.480.png?ck=1577929242" href="https://www.pinterest.com/pin/create/button/"></a></div>
 <div class="separator aem-GridColumn aem-GridColumn--default--3">
 <div class="cmp-separator">
     <hr class="cmp-separator__horizontal-rule"/>
-</div><!--cq{"decorated":true,"type":"beej/components/content/separator","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator","selectors":null,"servlet":"Script /apps/core/wcm/components/separator/v1/separator/separator.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator.html&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/separator/v1/separator/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/separator/v1/separator/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/separator/policy_111937699775257?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Fseparator%2Fv1%2Fseparator%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fseparator&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Fseparator&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Fseparator%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fbeej%2Fcomponents%2Fcontent%2Fseparator&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937699775257&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Fseparator%2Fpolicy_111937699775257&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/separator/v1/separator/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/separator&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621/beej/components/content/separator&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/separator&quot;,&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/separator&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
+</div></div>
 <div class="download aem-GridColumn aem-GridColumn--default--3">
 
 
-    <div class="cq-placeholder cmp-download cq-dd-file" data-emptytext="Download"></div>
-<!--cq{"decorated":true,"type":"beej/components/content/download","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download","selectors":null,"servlet":"Script /apps/core/wcm/components/download/v1/download/download.html","totalTime":1,"selfTime":1}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/download/v1/download/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/download/v1/download/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/download/v1/download/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/download/v1/download/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/download/policy_111937703548235?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Fdownload%2Fv1%2Fdownload%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fdownload&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Fdownload&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Fdownload%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fbeej%2Fcomponents%2Fcontent%2Fdownload&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937703548235&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Fdownload%2Fpolicy_111937703548235&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/download/v1/download/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/download&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621/beej/components/content/download&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/download&quot;,&quot;editConfig&quot;:{&quot;dropTarget&quot;:[{&quot;id&quot;:&quot;file&quot;,&quot;name&quot;:&quot;./fileReference&quot;,&quot;accept&quot;:[&quot;.*&quot;],&quot;groups&quot;:[&quot;media&quot;]}]},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/download&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
+
 </div>
 <div class="list aem-GridColumn aem-GridColumn--default--3">
 
 
-    <div class="cq-placeholder cmp-list" data-emptytext="List"></div>
 
-<!--cq{"decorated":true,"type":"beej/components/content/list","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list","selectors":null,"servlet":"Script /apps/core/wcm/components/list/v2/list/list.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list.html&quot;,&quot;dialog&quot;:&quot;/apps/core/wcm/components/list/v2/list/cq:dialog&quot;,&quot;dialogLoadingMode&quot;:&quot;auto&quot;,&quot;dialogLayout&quot;:&quot;auto&quot;,&quot;dialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/list/v2/list/_cq_dialog.html/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list&quot;,&quot;designDialog&quot;:&quot;/apps/core/wcm/components/list/v2/list/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/apps/core/wcm/components/list/v2/list/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/beej/components/content/list/policy_111937706751589?dialog=%2Fapps%2Fcore%2Fwcm%2Fcomponents%2Flist%2Fv2%2Flist%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Flist&amp;policyContentResourceType=beej%2Fcomponents%2Fcontent%2Flist&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fbeej%2Fcomponents%2Fcontent%2Flist%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621%2Fbeej%2Fcomponents%2Fcontent%2Flist&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_111937706751589&amp;policyRelativePath=beej%2Fcomponents%2Fcontent%2Flist%2Fpolicy_111937706751589&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/apps/core/wcm/components/list/v2/list/cq:design_dialog&quot;,&quot;type&quot;:&quot;beej/components/content/list&quot;,&quot;isResponsiveGrid&quot;:false,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621/beej/components/content/list&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/list&quot;,&quot;editConfig&quot;:{&quot;dropTarget&quot;:[{&quot;id&quot;:&quot;pages&quot;,&quot;name&quot;:&quot;./pages&quot;,&quot;accept&quot;:[&quot;*&quot;],&quot;groups&quot;:[&quot;page&quot;],&quot;params&quot;:{&quot;./listFrom&quot;:&quot;static&quot;}}]},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/list&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
-
-    <div class="new newpar section aem-Grid-newComponent">
-
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid/new","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*","selectors":null,"servlet":"Script /libs/wcm/foundation/components/parsys/newpar/newpar.html","totalTime":0,"selfTime":0}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*.html&quot;,&quot;type&quot;:&quot;wcm/foundation/components/responsivegrid/new&quot;,&quot;isResponsiveGrid&quot;:false,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid/new|newpar&quot;,&quot;editConfig&quot;:{&quot;actions&quot;:[null,&quot;CQ.wcm.EditBase.INSERT&quot;],&quot;disableTargeting&quot;:true},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621/*&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:false,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1}}"></cq>
-</div>
 
 </div>
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621","selectors":null,"servlet":"Script /libs/wcm/foundation/components/responsivegrid/responsivegrid.html","totalTime":26,"selfTime":23}-->
-<cq data-path="/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621" data-config="{&quot;path&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621&quot;,&quot;slingPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621.html&quot;,&quot;designDialog&quot;:&quot;/libs/wcm/foundation/components/responsivegrid/cq:design_dialog&quot;,&quot;designDialogLayout&quot;:&quot;fullscreen&quot;,&quot;designDialogLoadingMode&quot;:&quot;auto&quot;,&quot;designDialogSrc&quot;:&quot;/mnt/override/libs/wcm/foundation/components/responsivegrid/_cq_design_dialog.policydesign.editabletemplate.html/conf/beej/settings/wcm/policies/wcm/foundation/components/responsivegrid/policy_37455940355265?dialog=%2Flibs%2Fwcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2Fcq%3Adesign_dialog&amp;referrer=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1&amp;policyContentPath=%2Fcontent%2Fbeej%2Fus%2Fen%2Fblog%2Fblog-article-1%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621&amp;policyContentResourceType=wcm%2Ffoundation%2Fcomponents%2Fresponsivegrid&amp;policyDirectoryPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Fpolicies%2Fwcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2F&amp;policyMappingPath=%2Fconf%2Fbeej%2Fsettings%2Fwcm%2Ftemplates%2Farticle-page-template%2Fpolicies%2Fjcr%3Acontent%2Froot%2Fresponsivegrid%2Fresponsivegrid_1921325621&amp;policyMappingResourceType=wcm%2Fcore%2Fcomponents%2Fpolicies%2Fmapping&amp;policyName=policy_37455940355265&amp;policyRelativePath=wcm%2Ffoundation%2Fcomponents%2Fresponsivegrid%2Fpolicy_37455940355265&amp;resourceType=wcm%2Fcore%2Fcomponents%2Fpolicy%2Fpolicy&quot;,&quot;designDialogClassic&quot;:&quot;/libs/wcm/foundation/components/responsivegrid/design_dialog&quot;,&quot;hasPolicyMapping&quot;:true,&quot;type&quot;:&quot;wcm/foundation/components/responsivegrid&quot;,&quot;isResponsiveGrid&quot;:true,&quot;policyPath&quot;:&quot;root/responsivegrid/responsivegrid_1921325621&quot;,&quot;csp&quot;:&quot;page|basicpage/root|responsivegrid/responsivegrid/responsivegrid&quot;,&quot;isContainer&quot;:true,&quot;editConfig&quot;:{&quot;listeners&quot;:{&quot;afterchildinsert&quot;:&quot;function(editable){Granite.author.responsive.EditableActions.REFRESH.execute(editable)}&quot;},&quot;structure&quot;:true},&quot;ipeConfig&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;,&quot;jcr:title&quot;:&quot;BEEJ Article Sidebar&quot;,&quot;jcr:lastModifiedBy&quot;:&quot;admin&quot;,&quot;components&quot;:[&quot;/apps/beej/components/content/button&quot;,&quot;/apps/beej/components/content/download&quot;,&quot;/apps/beej/components/content/image&quot;,&quot;/apps/beej/components/content/list&quot;,&quot;/apps/beej/components/content/separator&quot;,&quot;/apps/beej/components/content/sharing&quot;,&quot;/apps/beej/components/content/text&quot;,&quot;/apps/beej/components/content/title&quot;],&quot;jcr:lastModified&quot;:&quot;java.util.GregorianCalendar[time=1577919417526,areFieldsSet=true,areAllFieldsSet=true,lenient=false,zone=sun.util.calendar.ZoneInfo[id=\&quot;GMT-07:00\&quot;,offset=-25200000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=0,WEEK_OF_YEAR=1,WEEK_OF_MONTH=1,DAY_OF_MONTH=1,DAY_OF_YEAR=1,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=1,AM_PM=1,HOUR=3,HOUR_OF_DAY=15,MINUTE=56,SECOND=57,MILLISECOND=526,ZONE_OFFSET=-25200000,DST_OFFSET=0]&quot;,&quot;sling:resourceType&quot;:&quot;wcm/core/components/policy/policy&quot;,&quot;jcr:content&quot;:{&quot;jcr:primaryType&quot;:&quot;nt:unstructured&quot;}},&quot;msm:liveRelationship&quot;:{&quot;msm:syncPath&quot;:&quot;/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621&quot;,&quot;msm:sourcePath&quot;:&quot;/content/beej/language-masters/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621&quot;,&quot;msm:targetPath&quot;:&quot;/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1921325621&quot;,&quot;msm:liveCopyPath&quot;:&quot;/content/beej/us/en&quot;,&quot;msm:liveCopyBpPath&quot;:&quot;/content/beej/language-masters/en&quot;,&quot;msm:isDeep&quot;:true,&quot;msm:isInheritedConfig&quot;:true,&quot;msm:isRootConfig&quot;:true,&quot;msm:status&quot;:{&quot;msm:isCancelled&quot;:false,&quot;msm:isCancelledForChildren&quot;:false,&quot;msm:isCancelledOn&quot;:&quot;&quot;,&quot;msm:isEditable&quot;:true,&quot;msm:isTargetExisting&quot;:true,&quot;msm:isSourceExisting&quot;:false,&quot;msm:isPage&quot;:false,&quot;cq:lastRolledout&quot;:&quot;&quot;,&quot;cq:lastRolledoutBy&quot;:&quot;&quot;,&quot;msm:isSourceModified&quot;:false,&quot;msm:isSourceDeleted&quot;:false,&quot;msm:isTargetFromDifferentTree&quot;:false,&quot;msm:isTargetSkipped&quot;:false,&quot;msm:isTargetModified&quot;:false,&quot;msm:isTargetDeleted&quot;:false,&quot;msm:isTargetManuallyCreated&quot;:true,&quot;msm:cancelledProperties&quot;:[]},&quot;cq:rolloutConfigs&quot;:[&quot;/libs/msm/wcm/rolloutconfigs/default&quot;],&quot;msm:computationTime&quot;:-1},&quot;responsive&quot;:{&quot;default&quot;:{&quot;offset&quot;:&quot;1&quot;,&quot;width&quot;:&quot;3&quot;,&quot;behavior&quot;:null},&quot;phone&quot;:{&quot;offset&quot;:&quot;0&quot;,&quot;width&quot;:&quot;12&quot;,&quot;behavior&quot;:null}}}"></cq>
+
+
+</div>
 </div>
 <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
 
@@ -338,22 +202,12 @@
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
 
 
-    <div class="new newpar section aem-Grid-newComponent">
-
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid/new","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1799918383/*","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/responsivegrid/responsivegrid_1799918383/*","selectors":null,"servlet":"Script /libs/wcm/foundation/components/parsys/newpar/newpar.html","totalTime":0,"selfTime":0}-->
-</div>
 
 </div>
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/responsivegrid_1799918383","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/responsivegrid/responsivegrid_1799918383","selectors":null,"servlet":"Script /libs/wcm/foundation/components/responsivegrid/responsivegrid.html","totalTime":4,"selfTime":4}-->
 </div>
 
-    <div class="new newpar section aem-Grid-newComponent">
-
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid/new","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid/*","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/responsivegrid/*","selectors":null,"servlet":"Script /libs/wcm/foundation/components/parsys/newpar/newpar.html","totalTime":0,"selfTime":0}-->
-</div>
 
 </div>
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/responsivegrid","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/responsivegrid","selectors":null,"servlet":"Script /libs/wcm/foundation/components/responsivegrid/responsivegrid.html","totalTime":70,"selfTime":19}-->
 </div>
 <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
 <div class="cmp-experiencefragment">
@@ -368,139 +222,29 @@
 
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
 
-    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
-
-
-<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
-
-    <div class="image aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--1">
-<div data-cmp-is="image" data-cmp-lazy data-cmp-src="/content/experience-fragments/beej/us/en/site/footer/master/_jcr_content/root/responsivegrid/responsivegrid/image.coreimg{.width}.svg/1577918581131/beej-logo-white.svg" data-asset="/content/dam/beej/beej-logo-white.svg" class="cmp-image" itemscope itemtype="http://schema.org/ImageObject">
-
-        <noscript data-cmp-hook-image="noscript">
-
-            <img src="/content/experience-fragments/beej/us/en/site/footer/master/_jcr_content/root/responsivegrid/responsivegrid/image.coreimg.svg/1577918581131/beej-logo-white.svg" class="cmp-image__image" itemprop="contentUrl" data-cmp-hook-image="image" alt/>
-
-        </noscript>
-
-
+    <div class="ghost aem-GridColumn aem-GridColumn--default--12">
 
 </div>
-
-
-</div>
-<div class="navigation aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--tablet--none aem-GridColumn--phone--8 aem-GridColumn aem-GridColumn--tablet--8 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
-<nav class="cmp-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Footer navigation">
-    <ul class="cmp-navigation__group">
-
-    <li class="cmp-navigation__item cmp-navigation__item--level-0 cmp-navigation__item--active">
-
-    <a href="/content/beej/us/en.html" title="Home" aria-current="page" class="cmp-navigation__item-link">Home</a>
-
-
-    <ul class="cmp-navigation__group">
-
-    <li class="cmp-navigation__item cmp-navigation__item--level-1">
-
-    <a href="/content/beej/us/en/about.html" title="About" class="cmp-navigation__item-link">About</a>
-
-
-    </li>
-
-
-
-    <li class="cmp-navigation__item cmp-navigation__item--level-1">
-
-    <a href="/content/beej/us/en/products.html" title="Products" class="cmp-navigation__item-link">Products</a>
-
-
-    </li>
-
-
-
-    <li class="cmp-navigation__item cmp-navigation__item--level-1 cmp-navigation__item--active">
-
-    <a href="/content/beej/us/en/blog.html" title="Blog" aria-current="page" class="cmp-navigation__item-link">Blog</a>
-
-
-    </li>
-
-
-
-    <li class="cmp-navigation__item cmp-navigation__item--level-1">
-
-    <a href="/content/beej/us/en/portfolio.html" title="Portfolio" class="cmp-navigation__item-link">Portfolio</a>
-
-
-    </li>
-
-    </ul>
-
-    </li>
-
-    </ul>
-</nav>
-
-
-
-</div>
-<div class="title aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
-<div class="cmp-title">
-    <h4 class="cmp-title__text">Follow Us</h4>
-</div>
-
-
-
-</div>
-<div class="responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
-
-
-<div class="aem-Grid aem-Grid--default--2 aem-Grid--tablet--12 aem-Grid--phone--12 ">
-
-    <div class="button aem-GridColumn--tablet--1 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--1 aem-GridColumn--phone--1">
-<a class="cmp-button" href="#" aria-label="Facebook">
-
-    <span class="cmp-button__icon cmp-button__icon--facebook"></span>
-
-    <span class="cmp-button__text">Facebook</span>
-</a>
-</div>
-<div class="button aem-GridColumn--tablet--1 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--1 aem-GridColumn--phone--1">
-<a class="cmp-button" href="#" aria-label="Twitter">
-
-    <span class="cmp-button__icon cmp-button__icon--twitter"></span>
-
-    <span class="cmp-button__text">Twitter</span>
-</a>
-</div>
-<div class="button aem-GridColumn--tablet--1 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--1 aem-GridColumn--phone--1">
-<a class="cmp-button" href="#" aria-label="Instagram">
-
-    <span class="cmp-button__icon cmp-button__icon--instagram"></span>
-
-    <span class="cmp-button__text">Instagram</span>
-</a>
-</div>
-
-
-</div>
-</div>
-<div class="separator aem-GridColumn aem-GridColumn--default--12">
-<div class="cmp-separator">
-    <hr class="cmp-separator__horizontal-rule"/>
-</div></div>
-<div class="text aem-GridColumn aem-GridColumn--default--12">
-<div class="cmp-text">
-    <p>Ⓒ 2020, BEEJ Site.</p>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-</div>
+<div class="footer aem-GridColumn aem-GridColumn--default--12"><footer class="beej-footer">
+    <div class="beej-footer__container margins">
+        <a class="beej-footer__logo" href="/content/beej/us/en">
+            <img class="beej-footer__logo-img" src="/content/dam/beej/beej-logo-white.svg"/>
+        </a>
+<!--        <nav class="beej-footer__nav" data-sly-use.multiFieldHelper="com/adobe/aem/demo/beej/core/models/MultifieldHelper">-->
+<!--            <sly data-sly-list.item="">-->
+<!--                <a class="beej-footer__nav-item" href="" target=""></a>-->
+<!--            </sly>-->
+<!--        </nav>-->
+        <nav class="beej-footer__nav">
+            <a class="beej-footer__nav-item" href="*">Home</a>
+            <a class="beej-footer__nav-item" href="*">About</a>
+            <a class="beej-footer__nav-item" href="*">Products</a>
+            <a class="beej-footer__nav-item" href="*">Blog</a>
+            <a class="beej-footer__nav-item" href="*">Portfolio</a>
+        </nav>
+        <div class="beej-footer__legal-text">© 2020 BEEJ Digital</div>
+    </div>
+</footer></div>
 
 
 </div>
@@ -512,43 +256,23 @@
 </div></div>
 
 
-<!--cq{"decorated":true,"type":"beej/components/content/experiencefragment","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/experiencefragment-footer","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/experiencefragment-footer","selectors":null,"servlet":"Script /apps/core/wcm/components/experiencefragment/v1/experiencefragment/experiencefragment.html","totalTime":45,"selfTime":45}-->
 </div>
 
-    <div class="new newpar section aem-Grid-newComponent">
-
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid/new","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root/*","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root/*","selectors":null,"servlet":"Script /libs/wcm/foundation/components/parsys/newpar/newpar.html","totalTime":0,"selfTime":0}-->
-</div>
 
 </div>
-<!--cq{"decorated":true,"type":"wcm/foundation/components/responsivegrid","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/root","structurePath":"/conf/beej/settings/wcm/templates/article-page-template/structure/jcr:content/root","selectors":null,"servlet":"Script /libs/wcm/foundation/components/responsivegrid/responsivegrid.html","totalTime":143,"selfTime":9}-->
 </div>
 
 
 
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
 
 
 
-
-
-
+<script type="text/javascript" src="/etc.clientlibs/beej/components/structure/header/clientlibs.js"></script>
 <script type="text/javascript" src="/etc.clientlibs/beej/clientlibs/clientlib-base.js"></script>
-
-
-
-
-
-
-<!--cq{"decorated":true,"type":"cq/cloudserviceconfigs/components/servicecomponents","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/cloudservices","selectors":null,"servlet":"Script /libs/cq/cloudserviceconfigs/components/servicecomponents/servicecomponents.jsp","totalTime":1,"selfTime":1}-->
-
-
-<!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/footer","path":"/content/beej/us/en/blog/blog-article-1/jcr:content/cloudconfig-footer","structurePath":"/content/beej/us/en/blog/blog-article-1/jcr:content/cloudconfig-footer","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/footer/footer.html","totalTime":2,"selfTime":2}-->
-
-
 
 <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
     </body>
 </html>
-<!--cq{"decorated":false,"type":"beej/components/structure/page","path":"/content/beej/us/en/blog/blog-article-1/jcr:content","selectors":null,"servlet":"Script /apps/core/wcm/components/page/v2/page/page.html","totalTime":166,"selfTime":18}-->
