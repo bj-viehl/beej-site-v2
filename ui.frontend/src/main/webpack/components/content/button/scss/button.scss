@@ -1,4 +1,9 @@
-.cmp-button {}
+.cmp-button {
+  height: 50px;
+  border-radius: 25px;
+  background: $color-ui-black;
+  color: $color-white;
+}
 .cmp-button__text {}
 .cmp-button__icon {}
 //.cmp-button__icon--myIcon {}
