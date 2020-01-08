@@ -1,10 +1,10 @@
 <section class="beej-hero ${properties.heroBackgroundColor}" style="background-image: url('${properties.heroBackgroundImage @ context='uri' }');">
     <div class="beej-hero__container ${properties.contentAlignment} margins">
-        <div class="beej-hero__content">
+        <div class="beej-hero__content ${properties.contentBackground}">
             <h1 class="beej-hero__title">${properties.heroTitle}</h1>
-            <h3 data-sly-test="${properties.heroText}" class="beej-hero__text">${properties.heroText}</h3>
-            <div  class="beej-button-container " data-sly-test="${properties.heroCTAPath}">
-                <a class="beej-button" href="${properties.heroCTAPath}"><span class="beej-button-text">${properties.heroCTAText}</span></a>
+            <p data-sly-test="${properties.heroText}" class="beej-hero__text">${properties.heroText}</p>
+            <div  class="beej-button__container " data-sly-test="${properties.heroCTAPath}">
+                <a class="beej-button ${properties.heroCTAColor}" href="${properties.heroCTAPath}">${properties.heroCTAText}</a>
             </div>
         </div>
     </div>

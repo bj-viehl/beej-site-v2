@@ -1,19 +1,32 @@
-$breakpoint-md:                       768px;
-$breakpoint-lg:                      1200px;
+// Variables
 
-$color-primary-blue:                 #0095ff;
-$color-primary-pink:                 #ff0076;
-$text-color:                         #646464;
-$text-color-dark:                    #343434;
+$breakpoint-sm:                         768px;
+$breakpoint-md:                         900px;
+$breakpoint-lg:                        1200px;
 
-$color-white:                        #FFFFFF;
-$color-white-25:   rgba(255, 255, 255, 0.25);
+$color-primary-blue:                  #0095ff;
+$color-primary-pink:                  #ff0076;
+$color-primary-pink-dark:             #ad0251;
+$color-primary-purple:                #9e00ff;
 
-$color-ui-black:                     #121212;
-$color-ui-grey-medium:               #646464;
+$text-color:                          #646464;
+$text-color-dark:                     #343434;
+
+$color-black:                            #000;
+
+$color-white:                            #FFF;
+$color-white-75:    rgba(255, 255, 255, 0.75);
+$color-white-50:    rgba(255, 255, 255, 0.50);
+$color-white-25:    rgba(255, 255, 255, 0.25);
+
+$color-ui-black:                      #121212;
+$color-ui-grey-medium:                #646464;
+$color-ui-grey-medium-50:          rgba(100,100,100,.5);
 $color-ui-grey-dark:                 #343434;
 $color-ui-grey-light:                #efefef;
 
 $main-gradient: linear-gradient(to bottom right, #0095ff, #ff0076);
+
+$transition:     all .3s cubic-bezier(0.52,0,0.53,1);
 
 $font-family:  "Open Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;

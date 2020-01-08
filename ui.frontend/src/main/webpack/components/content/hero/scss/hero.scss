@@ -1,33 +1,112 @@
 .beej-hero {
-   height: 300px;
-   background-blend-mode: multiply;
-   background-color: transparent;
-   background-position: center center;
-   background-size: cover;
-   opacity: .9;
+   background: {
+     blend-mode: multiply;
+     color: $color-ui-grey-medium-50;
+     position: center center;
+     size: cover;
+   }
+   position: relative;
 
    &__container {
+     height: auto;
+     min-height: 300px;
      display: flex;
      align-items: center;
+     margin: 0 auto;
+     padding: 0;
 
      &--center-align {
        justify-content: center;
+
+       .beej-hero__content {
+         text-align: center;
+       }
+
+       .beej-button__container {
+         justify-content: center;
+       }
      }
 
      &--right-align {
        justify-content: flex-end;
+
+       .beej-hero__content {
+         text-align: right;
+       }
+
+       .beej-button__container {
+         justify-content: flex-end;
+       }
      }
    }
 
    &__content {
+     padding: 40px 20px;
+
      .beej-hero__title {
-
+       color: $color-white;
+       margin: 0;
      }
-     .beej-hero__text {
 
+     .beej-hero__text {
+       color: $color-white;
+     }
+
+     // Content Background Options
+     &--outline-white {
+       border: 4px solid $color-white;
+     }
+
+     &--background-white {
+       background: $color-white;
+
+       .beej-hero__title {
+         color: $text-color;
+       }
+
+       .beej-hero__text {
+         color: $text-color;
+       }
+     }
+
+     &--background-blue {
+       background: $color-primary-blue;
+
+       .beej-hero__title {
+         color: $color-white;
+       }
+
+       .beej-hero__text {
+         color: $color-white;
+       }
+     }
+
+     &--background-pink {
+       background: $color-primary-pink;
+
+       .beej-hero__title {
+         color: $color-white;
+       }
+
+       .beej-hero__text {
+         color: $color-white;
+       }
+     }
+
+     &--background-purple {
+       background: $color-primary-purple;
+
+       .beej-hero__title {
+         color: $color-white;
+       }
+
+       .beej-hero__text {
+         color: $color-white;
+       }
      }
    }
 
+   // Background Color Overly Options
    &--pink-background {
      background-color: $color-primary-pink;
    }
@@ -36,12 +115,39 @@
      background-color: $color-primary-blue;
    }
 
-   &--grey-background {
-     background-color: $color-ui-grey-medium;
+   &--purple-background {
+     background-color: $color-primary-purple;
    }
 
-   &--gradient {
-     background-color: $main-gradient;
+   @media (min-width: $breakpoint-sm) {
+
+     &__container {
+       height: auto;
+       min-height: 400px;
+     }
+
+     &__content {
+       width: 75%;
+     }
    }
 
+   @media (min-width: $breakpoint-md) {
+     &__container {
+       height: auto;
+     }
+
+     &__content {
+       width: 50%;
+     }
+   }
+
+   @media (min-width: $breakpoint-lg) {
+     &__container {
+       height: 600px;
+     }
+
+     &__content {
+       width: 35%;
+    }
+  }
 }

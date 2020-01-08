@@ -1,9 +1,52 @@
-.cmp-button {
+.beej-button {
   height: 50px;
   border-radius: 25px;
-  background: $color-ui-black;
+  border: 2px solid $color-white;
+  background: transparent;
   color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 20px 0;
+  transition: all .25s ease-in-out;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &--pink {
+    border: 2px solid $color-primary-pink;
+    background: $color-primary-pink;
+    color: $color-white;
+
+    &:hover {
+      background: $color-primary-pink-dark;
+    }
+  }
+
+  &--blue {
+    border: 2px solid $color-primary-blue;
+    color: $color-primary-blue;
+
+    &:hover {
+      background: $color-primary-blue;
+      color: $color-white;
+    }
+  }
+
+  &--purple {
+    border: 2px solid $color-primary-purple;
+    color: $color-primary-purple;
+
+    &:hover {
+      background: $color-primary-purple;
+      color: $color-white;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 20px -8px rgba(50,50,50,1);
+  }
 }
-.cmp-button__text {}
-.cmp-button__icon {}
-//.cmp-button__icon--myIcon {}
