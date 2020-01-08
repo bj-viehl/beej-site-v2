@@ -22,7 +22,8 @@
     color: $color-white;
 
     &:hover {
-      background: $color-primary-pink-dark;
+      background: $color-primary-purple;
+      border: 2px solid $color-primary-purple;
     }
   }
 
