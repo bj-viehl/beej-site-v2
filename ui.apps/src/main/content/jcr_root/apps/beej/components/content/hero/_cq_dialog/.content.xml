@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Hero Options"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}false">
+                <items jcr:primaryType="nt:unstructured">
+                    <background
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Background"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <backgroundImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    allowUpload="{Boolean}false"
+                                                    autoStart="{Boolean}false"
+                                                    class="cq-droptarget"
+                                                    fieldLabel="Background Image"
+                                                    fieldDescription="Drop a logo from the DAM here"
+                                                    fileNameParameter="./primaryLogo"
+                                                    fileReferenceParameter="./heroBackgroundImage"
+                                                    mimeTypes="[image]"
+                                                    multiple="{Boolean}false"
+                                                    name="./file"
+                                                    title="Primary Logo Upload"
+                                                    useHTML5="{Boolean}true"/>
+                                            <backgroundColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Hero Background color"
+                                                    name="./heroBackgroundColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Grey (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-hero--pink-background"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-hero--blue-background"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-hero--purple-background"/>
+                                                </items>
+                                            </backgroundColor>
+                                            <alignment
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Content Alignment"
+                                                    name="./contentAlignment">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <left
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Align (Default)"
+                                                            value=""/>
+                                                    <center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Align"
+                                                            value="beej-hero__container--center-align"/>
+                                                    <right
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Align"
+                                                            value="beej-hero__container--right-align"/>
+                                                </items>
+                                            </alignment>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </background>
+                    <heroContent
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Content"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <contentBackground
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Content Area Background"
+                                                    name="./contentBackground">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Transparent (Default)"
+                                                            value=""/>
+                                                    <outline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="White Outline"
+                                                            value="beej-hero__content--outline-white"/>
+                                                    <white
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="White Background"
+                                                            value="beej-hero__content--background-white"/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink Background"
+                                                            value="beej-hero__content--background-pink"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple Background"
+                                                            value="beej-hero__content--background-purple"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue Background"
+                                                            value="beej-hero__content--background-blue"/>
+                                                </items>
+                                            </contentBackground>
+                                            <heroTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Hero Title"
+                                                    name="./heroTitle"/>
+                                            <heroText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Hero Text"
+                                                    name="./heroText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </heroContent>
+                    <cta
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="CTA"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ctaURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="CTA Path"
+                                                    name="./heroCTAPath"
+                                                    rootPath="/content"/>
+                                            <ctaText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="CTA Text"
+                                                    name="./heroCTAText"/>
+                                            <ctaColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="CTA Color"
+                                                    name="./heroCTAColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Default (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-button--pink"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-button--blue"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-button--purple"/>
+                                                </items>
+                                            </ctaColor>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </cta>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
