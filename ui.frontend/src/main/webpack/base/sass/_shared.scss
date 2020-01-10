@@ -1,0 +1,12 @@
+ @import 'variables';
+ @import 'grid';
+
+.margins {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: $breakpoint-lg;
+}
+
+.hidden {
+  display: none;
+}

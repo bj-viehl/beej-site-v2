@@ -1,0 +1,21 @@
+<header class="beej-header">
+    <div class="beej-header__container margins">
+        <a href="${properties.logoUrl}" class="beej-header__logo">
+            <img class="beej-header__logo-img" src="${properties.headerLogo}">
+        </a>
+        <!--   TODO:  include nav  <sly data-sly-resource="${'nav' @ resourceType='header/nav'}"></sly> -->
+        <nav class="beej-header__nav">
+            <div class="beej-header__nav-items">
+                <a href="#" class="beej-header__nav-item">Home</a>
+                <a href="#" class="beej-header__nav-item">About</a>
+                <a href="#" class="beej-header__nav-item">Products</a>
+                <a href="#" class="beej-header__nav-item">Blog</a>
+                <a href="#" class="beej-header__nav-item">Portfolio</a>
+            </div>
+        </nav>
+        <button class="beej-header__menu-button">
+            <img class="beej-header__menu-button-icon beej-header__menu-button-icon--menu" src="${properties.menuIcon}">
+            <img class="beej-header__menu-button-icon beej-header__menu-button-icon--closed" src="${properties.closeIcon}">
+        </button>
+    </div>
+</header>

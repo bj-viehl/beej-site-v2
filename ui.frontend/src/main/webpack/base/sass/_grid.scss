@@ -1,0 +1,12 @@
+.beej-grid {
+  .col-100,
+  .col-50,
+  .col-33,
+  .col-25 {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+
+  }
+}

@@ -1,0 +1,49 @@
+.beej-footer {
+  background: #343434;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  &__logo-img {
+    height: 40px;
+    opacity: .5;
+  }
+
+  &__nav {
+    margin: 20px 0;
+  }
+
+  &__nav-item {
+    color: #e6e6e6;
+    margin: 0 10px;
+    padding: 0 20px;
+    font-weight: light;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $color-primary-pink;
+    }
+  }
+
+  &__legal-text {
+    font-size: .75rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    &__nav {
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
