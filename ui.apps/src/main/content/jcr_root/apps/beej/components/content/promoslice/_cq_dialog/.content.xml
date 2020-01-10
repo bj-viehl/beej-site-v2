@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="BEEJ Content Slice"
+          jcr:title="BEEJ Promo Slice"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -12,9 +12,9 @@
                     sling:resourceType="granite/ui/components/coral/foundation/tabs"
                     maximized="{Boolean}false">
                 <items jcr:primaryType="nt:unstructured">
-                    <background
+                    <image
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Background"
+                            jcr:title="Image"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -33,20 +33,20 @@
                                                     allowUpload="{Boolean}false"
                                                     autoStart="{Boolean}false"
                                                     class="cq-droptarget"
-                                                    fieldLabel="Background Image"
+                                                    fieldLabel="Promo Slice Image"
                                                     fieldDescription="Drop a logo from the DAM here"
                                                     fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./heroBackgroundImage"
+                                                    fileReferenceParameter="./promoImage"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
                                                     title="Primary Logo Upload"
                                                     useHTML5="{Boolean}true"/>
-                                            <backgroundColor
+                                            <overlayColor
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Hero Background color"
-                                                    name="./heroBackgroundColor">
+                                                    fieldLabel="Promo Image Overlay Color"
+                                                    name="./promoImageOverlayColor">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <none
                                                             jcr:primaryType="nt:unstructured"
@@ -55,44 +55,77 @@
                                                     <pink
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Pink"
-                                                            value="beej-hero--pink-background"/>
+                                                            value="beej-promo-slice__image--pink-background"/>
                                                     <blue
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Blue"
-                                                            value="beej-hero--blue-background"/>
+                                                            value="beej-promo-slice__image--blue-background"/>
                                                     <purple
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Purple"
-                                                            value="beej-hero--purple-background"/>
+                                                            value="beej-promo-slice__image--purple-background"/>
                                                 </items>
-                                            </backgroundColor>
-                                            <alignment
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Content Alignment"
-                                                    name="./contentAlignment">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <left
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Left Align (Default)"
-                                                            value=""/>
-                                                    <center
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Center Align"
-                                                            value="beej-hero__container--center-align"/>
-                                                    <right
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Right Align"
-                                                            value="beej-hero__container--right-align"/>
-                                                </items>
-                                            </alignment>
+                                            </overlayColor>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </background>
-                    <heroContent
+                    </image>
+                    <layout
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Layout"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <width
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                    fieldLabel="Slice Width"
+                                                    name="./promoWidth">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Full Width"
+                                                            value=""/>
+                                                    <maxwidth
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="1200px Max Width"
+                                                            value="beej-promo-slice__wrapper--margins"/>
+                                                </items>
+                                            </width>
+                                            <arrangement
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                    fieldLabel="Slice Arrangement"
+                                                    name="./promoArrangement">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <left
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Content Right"
+                                                            value=""/>
+                                                    <right
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Content Left"
+                                                            value="beej-promo-slice__container--content-left"/>
+                                                </items>
+                                            </arrangement>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </layout>
+                    <sliceContent
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Content"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
@@ -110,51 +143,47 @@
                                             <contentBackground
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Content Area Background"
-                                                    name="./contentBackground">
+                                                    fieldLabel="Promo Slice Content Background Color"
+                                                    name="./promoContentBackground">
                                                 <items jcr:primaryType="nt:unstructured">
-                                                    <none
+                                                    <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Transparent (Default)"
+                                                            text="Grey Background (Default)"
                                                             value=""/>
-                                                    <outline
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="White Outline"
-                                                            value="beej-hero__content--outline-white"/>
                                                     <white
                                                             jcr:primaryType="nt:unstructured"
                                                             text="White Background"
-                                                            value="beej-hero__content--background-white"/>
+                                                            value="beej-promo-slice__content--background-white"/>
                                                     <pink
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Pink Background"
-                                                            value="beej-hero__content--background-pink"/>
+                                                            value="beej-promo-slice__content--background-pink"/>
                                                     <purple
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Purple Background"
-                                                            value="beej-hero__content--background-purple"/>
+                                                            value="beej-promo-slice__content--background-purple"/>
                                                     <blue
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Blue Background"
-                                                            value="beej-hero__content--background-blue"/>
+                                                            value="beej-promo-slice__content--background-blue"/>
                                                 </items>
                                             </contentBackground>
-                                            <heroTitle
+                                            <promoTitle
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Hero Title"
-                                                    name="./heroTitle"/>
-                                            <heroText
+                                                    fieldLabel="Promo Slice Title"
+                                                    name="./promoTitle"/>
+                                            <promoText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                    fieldLabel="Hero Text"
-                                                    name="./heroText"/>
+                                                    fieldLabel="Promo Slice Text"
+                                                    name="./promoText"/>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </heroContent>
+                    </sliceContent>
                     <cta
                             jcr:primaryType="nt:unstructured"
                             jcr:title="CTA"
@@ -174,18 +203,18 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
                                                     fieldLabel="CTA Path"
-                                                    name="./heroCTAPath"
+                                                    name="./promoCTAPath"
                                                     rootPath="/content"/>
                                             <ctaText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldLabel="CTA Text"
-                                                    name="./heroCTAText"/>
+                                                    name="./promoCTAText"/>
                                             <ctaColor
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
                                                     fieldLabel="CTA Color"
-                                                    name="./heroCTAColor">
+                                                    name="./promoCTAColor">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"

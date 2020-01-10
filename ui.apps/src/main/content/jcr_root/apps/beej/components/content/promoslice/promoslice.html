@@ -1,0 +1,14 @@
+<section class="beej-promo-slice">
+    <div class="beej-promo-slice__wrapper ${properties.promoWidth}">
+        <div class="beej-promo-slice__container ${properties.promoArrangement}">
+            <div class="beej-promo-slice__image ${properties.promoImageOverlayColor}" style="background-image: url('${properties.promoImage @ context='uri'}');"></div>
+            <div class="beej-promo-slice__content ${properties.promoContentBackground}">
+                <h3 class="beej-promo-slice__title" data-sly-test="${properties.promoTitle}">${properties.promoTitle}</h3>
+                <p class="beej-promo-slice__text" data-sly-test="${properties.promoText}">${properties.promoText}</p>
+                <div  class="beej-button__container" data-sly-test="${properties.promoCTAPath}">
+                    <a class="beej-button ${properties.promoCTAColor}" href="${properties.promoCTAPath}">${properties.promoCTAText}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

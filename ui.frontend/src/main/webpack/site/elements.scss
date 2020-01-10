@@ -13,16 +13,33 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 h1, .h1 {
   font-size: 2rem;
-  line-height: 1.6;
+  line-height: 1.4;
 
   @media (min-width: $breakpoint-md) {
     font-size: 3.25rem;
-    line-height: 1.6;
+  }
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 3rem;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2rem;
   }
 }
 
@@ -30,9 +47,6 @@ a {
     color: $color-primary-pink;
     text-decoration: none;
 }
-
-// Body text
-// -------------------------
 
 p {
   font-size: 1rem;
