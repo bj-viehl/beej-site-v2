@@ -1,0 +1,40 @@
+.beej-feature-slice {
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+
+    &--center-align {
+      justify-content: center;
+    }
+
+    &--right-align {
+      justify-content: center;
+    }
+
+    .beej-button {
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    height: 150px;
+    width: 150px;
+
+    &--small {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
