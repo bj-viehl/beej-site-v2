@@ -13,16 +13,20 @@
     height: 300px;
 
     // Background Color Overly Options
-    &--pink-background {
+    &--pink-overlay {
       background-color: $color-primary-pink;
     }
 
-    &--blue-background {
+    &--blue-overlay {
       background-color: $color-primary-blue;
     }
 
-    &--purple-background {
+    &--purple-overlay {
       background-color: $color-primary-purple;
+    }
+
+    &--orange-overlay {
+      background-color: $color-primary-orange;
     }
   }
 

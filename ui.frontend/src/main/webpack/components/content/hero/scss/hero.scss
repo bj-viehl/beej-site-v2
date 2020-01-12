@@ -45,7 +45,6 @@
 
      .beej-hero__title {
        color: $color-white;
-       text-transform: lowercase;
      }
 
      .beej-hero__text {
@@ -107,16 +106,20 @@
    }
 
    // Background Color Overly Options
-   &--pink-background {
+   &--pink-overlay {
      background-color: $color-primary-pink;
    }
 
-   &--blue-background {
+   &--blue-overlay {
      background-color: $color-primary-blue;
    }
 
-   &--purple-background {
+   &--purple-overlay {
      background-color: $color-primary-purple;
+   }
+
+   &--orange-overlay {
+     background-color: $color-primary-orange;
    }
 
    @media (min-width: $breakpoint-sm) {

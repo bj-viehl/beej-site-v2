@@ -55,15 +55,19 @@
                                                     <pink
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Pink"
-                                                            value="beej-promo-slice__image--pink-background"/>
+                                                            value="beej-promo-slice__image--pink-overlay"/>
                                                     <blue
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Blue"
-                                                            value="beej-promo-slice__image--blue-background"/>
+                                                            value="beej-promo-slice__image--blue-overlay"/>
                                                     <purple
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Purple"
-                                                            value="beej-promo-slice__image--purple-background"/>
+                                                            value="beej-promo-slice__image--purple-overlay"/>
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-promo-slice__image--orange-overlay"/>
                                                 </items>
                                             </overlayColor>
                                         </items>
