@@ -1,0 +1,68 @@
+.beej-feature-slice {
+  padding: 40px;
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    &-icon {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 20px;
+
+      &--small {
+        height: 75px;
+        width: 75px;
+      }
+    }
+
+    &--center-align {
+      justify-content: center;
+
+      .beej-button {
+        width: 100%;
+      }
+    }
+
+    &--right-align {
+      justify-content: center;
+    }
+  }
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 60px;
+
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__feature {
+      margin: 20px;
+
+      &-icon {
+        height: 150px;
+        width: 150px;
+
+        &--small {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}

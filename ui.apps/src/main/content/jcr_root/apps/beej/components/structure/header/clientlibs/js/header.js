@@ -6,7 +6,7 @@ $( document ).ready(function() {
     $('.beej-header__menu-button').on('click', function() {
        var windowWidth = $(window).width();
 
-       if (windowWidth < 768) {
+       if (windowWidth < 900) {
            var navOpen = $('.beej-header').hasClass('beej-header--open');
 
            if (navOpen == true) {

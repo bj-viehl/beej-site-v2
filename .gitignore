@@ -81,7 +81,3 @@ package-lock.json
 ### IntelliJ ###
 .idea/
 *.iml
-
-## Webpack ##
-static/index.html
-dist/clientlib-site/site.css

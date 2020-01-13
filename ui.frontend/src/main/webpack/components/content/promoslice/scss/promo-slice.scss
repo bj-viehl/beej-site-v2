@@ -1,28 +1,29 @@
 .beej-promo-slice {
-  &__wrapper {
-
-  }
 
   &__image {
     background: {
       blend-mode: multiply;
-      color: $color-ui-grey-medium-50;
+      color: transparent;
       position: center center;
       size: cover;
     }
     height: 300px;
 
     // Background Color Overly Options
-    &--pink-background {
+    &--pink-overlay {
       background-color: $color-primary-pink;
     }
 
-    &--blue-background {
+    &--blue-overlay {
       background-color: $color-primary-blue;
     }
 
-    &--purple-background {
+    &--purple-overlay {
       background-color: $color-primary-purple;
+    }
+
+    &--orange-overlay {
+      background-color: $color-primary-orange;
     }
   }
 
