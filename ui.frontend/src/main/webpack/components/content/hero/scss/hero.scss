@@ -125,20 +125,20 @@
    @media (min-width: $breakpoint-sm) {
 
      &__container {
-       height: auto;
+       height: 500px;
        min-height: 400px;
      }
 
      &__content {
        width: 75%;
+
+       .beej-hero__title {
+         margin-bottom: 20px;
+       }
      }
    }
 
    @media (min-width: $breakpoint-md) {
-     &__container {
-       height: auto;
-     }
-
      &__content {
        width: 50%;
      }
