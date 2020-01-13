@@ -1,24 +1,28 @@
-<section class="beej-features-slice">
-    <div class="beej-features-slice__container ${properties.featureSliceMaxWidth}">
-        <div class="beej-features-slice__feature ${properties.featureAlignment}">
-            <img class="beej-feature-slice__icon" src="${properties.featureIcon1 @ context='uri'}">
-            <h3 class="beej-feature-slice__text">${properties.featureText1}</h3>
+<section class="beej-feature-slice">
+    <h2 class="beej-feature-slice__title">${properties.featureSliceTitle}</h2>
+    <div class="beej-feature-slice__container ${properties.featureSliceMaxWidth}">
+        <div class="beej-feature-slice__feature ${properties.featureAlignment}">
+            <img class="beej-feature-slice__feature-icon ${properties.featureIconSize}" src="${properties.featureIcon1 @ context='uri'}">
+            <h4 class="beej-feature-slice__feature-title">${properties.featureTitle1}</h4>
+            <p class="beej-feature-slice__feature-text">${properties.featureText1}</p>
             <div class="beej-button__container" data-sly-test="${properties.featureCTAPath1}">
-                <a class="beej-button ${featureCTAColor1}" href="${properties.featureCTAPath1}">${properties.featureCTAText1}</a>
+                <a class="beej-button ${properties.featureCTAColor1}" href="${properties.featureCTAPath1}">${properties.featureCTAText1}</a>
             </div>
         </div>
-        <div class="beej-features-slice__feature ${properties.featureAlignment}">
-            <img class="beej-feature-slice__icon" src="${properties.featureIcon2 @ context='uri'}">
-            <h3 class="beej-feature-slice__text">${properties.featureText2}</h3>
+        <div class="beej-feature-slice__feature ${properties.featureAlignment}">
+            <img class="beej-feature-slice__feature-icon ${properties.featureIconSize}" src="${properties.featureIcon2 @ context='uri'}">
+            <h4 class="beej-feature-slice__feature-title">${properties.featureTitle2}</h4>
+            <p class="beej-feature-slice__feature-text">${properties.featureText2}</p>
             <div class="beej-button__container" data-sly-test="${properties.featureCTAPath2}">
-                <a class="beej-button ${featureCTAColor2}" href="${properties.featureCTAPath2}">${properties.featureCTAText2}</a>
+                <a class="beej-button ${properties.featureCTAColor2}" href="${properties.featureCTAPath2}">${properties.featureCTAText2}</a>
             </div>
         </div>
-        <div class="beej-features-slice__feature ${properties.featureAlignment}">
-            <img class="beej-feature-slice__icon" src="${properties.featureIcon3 @ context='uri'}">
-            <h3 class="beej-feature-slice__text">${properties.featureText3}</h3>
+        <div class="beej-feature-slice__feature ${properties.featureAlignment}">
+            <img class="beej-feature-slice__feature-icon ${properties.featureIconSize}" src="${properties.featureIcon3 @ context='uri'}">
+            <h4 class="beej-feature-slice__feature-title">${properties.featureTitle3}</h4>
+            <p class="beej-feature-slice__feature-text">${properties.featureText3}</p>
             <div class="beej-button__container" data-sly-test="${properties.featureCTAPath3}">
-                <a class="beej-button ${featureCTAColor3}" href="${properties.featureCTAPath3}">${properties.featureCTAText3}</a>
+                <a class="beej-button ${properties.featureCTAColor3}" href="${properties.featureCTAPath3}">${properties.featureCTAText3}</a>
             </div>
         </div>
     </div>
