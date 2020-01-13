@@ -39,7 +39,26 @@ h3, .h3 {
   line-height: 1.2;
 
   @media (min-width: $breakpoint-md) {
+    font-size: 2.5rem;
+  }
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+
+  @media (min-width: $breakpoint-md) {
     font-size: 2rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-decoration: underline;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.75rem;
   }
 }
 
