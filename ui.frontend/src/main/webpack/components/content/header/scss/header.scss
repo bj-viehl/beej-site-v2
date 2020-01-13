@@ -1,4 +1,5 @@
 .beej-header {
+  background: $color-white;
   position: relative;
   box-shadow: 0 0 8px 2px rgba(128, 128, 128, .25);
 
@@ -40,6 +41,7 @@
   }
 
   &__menu-button {
+    background: $color-white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -123,6 +125,22 @@
       &:hover {
         color: $color-primary-pink;
       }
+    }
+  }
+
+  &[data-sticky="true"] {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    right: 0;
+  }
+
+  &--dark {
+    background: $color-ui-grey-dark;
+
+    .beej-header__nav-item {
+      color: $color-white;
     }
   }
 }
