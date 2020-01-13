@@ -152,7 +152,7 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Grey Background (Default)"
+                                                            text="Transparent (Default)"
                                                             value=""/>
                                                     <white
                                                             jcr:primaryType="nt:unstructured"
