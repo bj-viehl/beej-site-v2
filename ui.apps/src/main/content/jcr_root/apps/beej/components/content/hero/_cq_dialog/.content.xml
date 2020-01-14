@@ -193,7 +193,7 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
+                                                            text="Grey (Default)"
                                                             value=""/>
                                                     <white
                                                             jcr:primaryType="nt:unstructured"
