@@ -19,6 +19,19 @@
     top: 60px;
     z-index: 2;
     flex-grow: 1;
+
+    .navigation {
+
+    }
+  }
+
+  &__nav-group {
+    .beej-header__nav-group {
+
+      .beej-header__nav-group {
+        display: none;
+      }
+    }
   }
 
   &__nav {
@@ -132,6 +145,11 @@
       display: block;
       position: relative;
       top: 0;
+
+      .navigation {
+        display: flex;
+        flex-grow: 1;
+      }
     }
 
     &__menu-container {
@@ -139,6 +157,11 @@
       align-items: center;
       justify-content: center;
       flex-grow: 1;
+    }
+
+    &__nav-group {
+      display: flex;
+      flex-grow: 0;
     }
 
     &__nav {
@@ -152,6 +175,10 @@
       color: $text-color-dark;
       margin: 0 10px;
       border: 0;
+
+      &--level-2 {
+        display: none;
+      }
 
       &:hover {
         color: $color-primary-purple;

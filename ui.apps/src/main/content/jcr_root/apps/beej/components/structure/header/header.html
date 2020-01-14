@@ -5,14 +5,7 @@
         </a>
         <div class="beej-header__menu">
             <div class="beej-header__menu-container">
-                <!--   TODO:  include parsys  <sly data-sly-resource="${'parsys' @ resourceType='foundation/components/parsys'}"></sly> -->
-                <nav class="beej-header__nav">
-                    <a href="#" class="beej-header__nav-item">Home</a>
-                    <a href="#" class="beej-header__nav-item">About</a>
-                    <a href="#" class="beej-header__nav-item">Products</a>
-                    <a href="#" class="beej-header__nav-item">Blog</a>
-                    <a href="#" class="beej-header__nav-item">Portfolio</a>
-                </nav>
+                <sly data-sly-resource="${'parsys' @ resourceType='foundation/components/parsys'}" data-sly-unwrap></sly>
                 <div class="beej-header__cta-button beej-button__container" data-sly-test="${properties.headerCTAPath}">
                     <a class="beej-button ${properties.headerCTAColor}" href="${properties.headerCTAPath}">${properties.headerCTAText}</a>
                 </div>
