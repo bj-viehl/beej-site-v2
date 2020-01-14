@@ -122,8 +122,12 @@
      background-color: $color-primary-orange;
    }
 
-   @media (min-width: $breakpoint-sm) {
+   &--margins {
+     max-width: 1200px;
+     margin: 0 auto;
+   }
 
+   @media (min-width: $breakpoint-sm) {
      &__container {
        height: 500px;
        min-height: 400px;
