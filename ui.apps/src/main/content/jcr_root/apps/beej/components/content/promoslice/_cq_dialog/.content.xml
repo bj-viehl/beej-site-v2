@@ -50,8 +50,12 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <none
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Grey (Default)"
+                                                            text="Transparent (Default)"
                                                             value=""/>
+                                                    <grey
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Grey"
+                                                            value="beej-promo-slice__image--grey-overlay"/>
                                                     <pink
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Pink"
@@ -152,7 +156,7 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Transparent (Default)"
+                                                            text="Grey (Default)"
                                                             value=""/>
                                                     <white
                                                             jcr:primaryType="nt:unstructured"
@@ -222,7 +226,7 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
+                                                            text="Grey (Default)"
                                                             value=""/>
                                                     <white
                                                             jcr:primaryType="nt:unstructured"

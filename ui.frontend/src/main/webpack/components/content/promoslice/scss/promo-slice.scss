@@ -10,6 +10,10 @@
     height: 300px;
 
     // Background Color Overly Options
+    &--grey-overlay {
+      background-color: $color-ui-grey-medium-50;
+    }
+
     &--pink-overlay {
       background-color: $color-primary-pink;
     }
