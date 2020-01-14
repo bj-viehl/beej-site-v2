@@ -1,5 +1,5 @@
 .beej-intro-slice {
-  margin: 40px 0;
+  padding: 40px 0;
 
   &__container {
     padding: 20px;
@@ -11,7 +11,7 @@
   &__icon {
     width: 150px;
     height: 150px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 
     &--small {
       width: 100px;
@@ -23,13 +23,58 @@
     justify-content: center;
   }
 
+  &--background-grey {
+    background: $color-ui-grey-light;
+  }
+
+  &--background-pink {
+    background: $color-primary-pink;
+
+    .beej-intro-slice__title,
+    .beej-intro-slice__text {
+      color: $color-white;
+    }
+  }
+
+  &--background-purple {
+    background: $color-primary-purple;
+
+    .beej-intro-slice__title,
+    .beej-intro-slice__text {
+      color: $color-white;
+    }
+  }
+
+  &--background-blue {
+    background: $color-primary-blue;
+
+    .beej-intro-slice__title,
+    .beej-intro-slice__text {
+      color: $color-white;
+    }
+  }
+
+  &--background-orange {
+    background: $color-primary-orange;
+
+    .beej-intro-slice__title,
+    .beej-intro-slice__text {
+      color: $color-white;
+    }
+  }
+
+  &--margins {
+    max-width: $breakpoint-lg;
+    margin: 0 auto;
+  }
+
   @media (min-width: $breakpoint-md) {
-    margin: 60px 0;
+    padding: 60px 0;
 
     &__icon {
       width: 200px;
       height: 200px;
-      margin: 40px 0;
+      margin-bottom: 40px;
 
       &--small {
         width: 150px;
@@ -39,6 +84,6 @@
   }
 
   @media (min-width: $breakpoint-lg) {
-    margin: 80px 0;
+    padding: 80px 0;
   }
 }

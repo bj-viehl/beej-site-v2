@@ -12,9 +12,9 @@
                     sling:resourceType="granite/ui/components/coral/foundation/tabs"
                     maximized="{Boolean}false">
                 <items jcr:primaryType="nt:unstructured">
-                    <background
+                    <appearance
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Background"
+                            jcr:title="Appearance"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -27,6 +27,22 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
+                                            <width
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Hero Max Width"
+                                                    name="./heroMaxWidth">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fullWidth
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Full Width (Default)"
+                                                            value=""/>
+                                                    <large
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Max Width Lg 1200px"
+                                                            value="beej-hero--margins"/>
+                                                </items>
+                                            </width>
                                             <backgroundImage
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
@@ -66,36 +82,16 @@
                                                             value="beej-hero--purple-overlay"/>
                                                     <orange
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Purple"
+                                                            text="Orange"
                                                             value="beej-hero--orange-overlay"/>
                                                 </items>
                                             </backgroundColor>
-                                            <alignment
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Content Alignment"
-                                                    name="./contentAlignment">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <left
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Left Align (Default)"
-                                                            value=""/>
-                                                    <center
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Center Align"
-                                                            value="beej-hero__container--center-align"/>
-                                                    <right
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Right Align"
-                                                            value="beej-hero__container--right-align"/>
-                                                </items>
-                                            </alignment>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </background>
+                    </appearance>
                     <heroContent
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Content"

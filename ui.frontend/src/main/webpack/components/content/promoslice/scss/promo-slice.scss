@@ -66,6 +66,15 @@
         color: $color-white;
       }
     }
+
+    &--background-orange {
+      background: $color-primary-orange;
+
+      .beej-promo-slice__title,
+      .beej-promo-slice__text {
+        color: $color-white;
+      }
+    }
   }
 
   @media (min-width: $breakpoint-sm) {
