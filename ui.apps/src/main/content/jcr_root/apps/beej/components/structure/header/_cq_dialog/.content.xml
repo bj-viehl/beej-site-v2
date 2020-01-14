@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Header Options"
+          jcr:title="Header Settings"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -30,10 +30,10 @@
                                             <sticky
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/switch"
-                                                    fieldLabel="Masthead is sticky?"
-                                                    onText="Yes"
-                                                    offText="No"
-                                                    name="./sticky"/>
+                                                    fieldLabel="Make Header Sticky"
+                                                    onText="Sticky"
+                                                    offText="Standard"
+                                                    name="./stickyHeader"/>
                                             <headerColor
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
@@ -50,27 +50,6 @@
                                                             value="beej-header--dark"/>
                                                 </items>
                                             </headerColor>
-                                        </items>
-                                    </column>
-                                </items>
-                            </columns>
-                        </items>
-                    </properties>
-                    <logo
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Logo"
-                            sling:resourceType="granite/ui/components/coral/foundation/container"
-                            margin="{Boolean}true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                    margin="{Boolean}true">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <items jcr:primaryType="nt:unstructured">
                                             <logoPrimary
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
@@ -97,8 +76,68 @@
                                 </items>
                             </columns>
                         </items>
-                    </logo>
-                    <icon
+                    </properties>
+                    <headerCta
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Header CTA"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ctaURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="CTA Path"
+                                                    name="./headerCTAPath"
+                                                    rootPath="/content"/>
+                                            <ctaText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="CTA Text"
+                                                    name="./headerCTAText"/>
+                                            <ctaColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="CTA Color"
+                                                    name="./headerCTAColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Default (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-button--pink"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-button--blue"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-button--purple"/>
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-button--orange"/>
+                                                </items>
+                                            </ctaColor>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </headerCta>
+                    <menuButton
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Menu Button"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
@@ -149,7 +188,7 @@
                                 </items>
                             </columns>
                         </items>
-                    </icon>
+                    </menuButton>
                 </items>
             </tabs>
         </items>

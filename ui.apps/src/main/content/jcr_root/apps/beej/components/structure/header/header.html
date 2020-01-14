@@ -1,18 +1,23 @@
-<header class="beej-header ${properties.headerColor}" data-sticky="${properties.sticky}">
+<header class="beej-header ${properties.headerColor}" data-sticky="${properties.stickyHeader}">
     <div class="beej-header__container margins">
         <a href="${properties.logoUrl}" class="beej-header__logo">
             <img class="beej-header__logo-img" src="${properties.headerLogo}">
         </a>
-        <!--   TODO:  include nav  <sly data-sly-resource="${'nav' @ resourceType='header/nav'}"></sly> -->
-        <nav class="beej-header__nav">
-            <div class="beej-header__nav-items">
-                <a href="#" class="beej-header__nav-item">Home</a>
-                <a href="#" class="beej-header__nav-item">About</a>
-                <a href="#" class="beej-header__nav-item">Products</a>
-                <a href="#" class="beej-header__nav-item">Blog</a>
-                <a href="#" class="beej-header__nav-item">Portfolio</a>
+        <div class="beej-header__menu">
+            <div class="beej-header__menu-container">
+                <!--   TODO:  include parsys  <sly data-sly-resource="${'parsys' @ resourceType='foundation/components/parsys'}"></sly> -->
+                <nav class="beej-header__nav">
+                    <a href="#" class="beej-header__nav-item">Home</a>
+                    <a href="#" class="beej-header__nav-item">About</a>
+                    <a href="#" class="beej-header__nav-item">Products</a>
+                    <a href="#" class="beej-header__nav-item">Blog</a>
+                    <a href="#" class="beej-header__nav-item">Portfolio</a>
+                </nav>
+                <div class="beej-header__cta-button beej-button__container" data-sly-test="${properties.headerCTAPath}">
+                    <a class="beej-button ${properties.headerCTAColor}" href="${properties.headerCTAPath}">${properties.headerCTAText}</a>
+                </div>
             </div>
-        </nav>
+        </div>
         <button class="beej-header__menu-button">
             <img class="beej-header__menu-button-icon beej-header__menu-button-icon--menu" src="${properties.menuIcon}">
             <img class="beej-header__menu-button-icon beej-header__menu-button-icon--closed" src="${properties.closeIcon}">

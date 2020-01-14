@@ -10,60 +10,62 @@
     height: 60px;
   }
 
-  &__nav {
+  &__menu {
     display: none;
-    background: $main-gradient;
+    background: $color-white;
     position: absolute;
     left: 0;
     right: 0;
     top: 60px;
     z-index: 2;
+    flex-grow: 1;
+  }
 
-    &-items {
-      height: auto;
-    }
+  &__nav {
+    height: auto;
+  }
 
-    &-item {
-      color: $color-white;
-      margin: 0;
-      padding: 0 20px;
-      height: 50px;
-      transition: all .25s ease-in-out;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
+  &__nav-item {
+    border-top: 1px solid $color-ui-grey-light;
+    color: $text-color;
+    margin: 0;
+    padding: 0 20px;
+    height: 50px;
+    transition: all .25s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 
-      &:hover {
-        background: $color-white-25;
-      }
+    &:hover {
+      background: $color-ui-grey-light;
     }
   }
 
   &__menu-button {
     background: $color-white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      height: 40px;
-      width: 40px;
-      transition: all .25s ease-in-out;
-      outline: none;
-      border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    transition: all .25s ease-in-out;
+    outline: none;
+    border: none;
 
-      &-icon {
-        height: 30px;
-        width: 30px;
-      }
+    &-icon {
+      height: 30px;
+      width: 30px;
+    }
 
-      &-icon--menu {
-        display: block;
-      }
+    &-icon--menu {
+      display: block;
+    }
 
-      &-icon--closed {
-        display: none;
-      }
+    &-icon--closed {
+      display: none;
+    }
   }
 
   &__logo {
@@ -75,6 +77,11 @@
     height: 40px;
   }
 
+  &__cta-button {
+    justify-content: center;
+    background: $color-ui-grey-dark;
+  }
+
   &--open {
     .beej-header__menu-button-icon--menu {
       display: none;
@@ -84,6 +91,22 @@
     }
   }
 
+  &--dark {
+    background: $color-ui-grey-dark;
+
+    .beej-header__nav-item {
+      color: $color-white;
+    }
+  }
+
+  // Sticky header given with data-sticky attr
+  &[data-sticky="true"] {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    right: 0;
+  }
 
   @media (min-width: $breakpoint-md) {
 
@@ -104,43 +127,40 @@
       height: 50px;
     }
 
-    &__nav {
+    &__menu {
       background: transparent;
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
+      display: block;
       position: relative;
       top: 0;
     }
 
-    &__nav-items {
+    &__menu-container {
       display: flex;
       align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
     }
 
     &__nav-item {
       color: $text-color-dark;
       margin: 0 10px;
+      border: 0;
 
       &:hover {
-        color: $color-primary-pink;
+        color: $color-primary-purple;
+        background: transparent;
       }
     }
-  }
 
-  &[data-sticky="true"] {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    left: 0;
-    right: 0;
-  }
-
-  &--dark {
-    background: $color-ui-grey-dark;
-
-    .beej-header__nav-item {
-      color: $color-white;
+    &__cta-button {
+      background: transparent;
     }
   }
 }
