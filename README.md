@@ -1,6 +1,6 @@
-# Sample AEM project template
+# BEEJ AEM Demo Project
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This is a demo project based of a project template for AEM-based applications. It is my own sand box to do what ever I want.
 
 ## Modules
 
