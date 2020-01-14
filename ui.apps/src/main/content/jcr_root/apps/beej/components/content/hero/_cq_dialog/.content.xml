@@ -193,8 +193,12 @@
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
+                                                            text="Grey (Default)"
                                                             value=""/>
+                                                    <white
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="White"
+                                                            value="beej-button--white"/>
                                                     <pink
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Pink"

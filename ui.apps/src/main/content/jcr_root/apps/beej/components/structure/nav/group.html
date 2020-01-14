@@ -1,5 +1,5 @@
 <template data-sly-template.group="${@ items='The navigation items for the current level'}" data-sly-use.itemTemplate="item.html">
-    <div class="beej-header__nav-items" data-sly-list="${items}">
+    <div class="beej-header__nav-group" data-sly-list="${items}">
         <sly data-sly-call="${itemTemplate.item @ item=item}"></sly>
     </div>
 </template>

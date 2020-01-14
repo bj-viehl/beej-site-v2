@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Header Settings"
+          jcr:title="Intro Slice Options"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -12,9 +12,9 @@
                     sling:resourceType="granite/ui/components/coral/foundation/tabs"
                     maximized="{Boolean}false">
                 <items jcr:primaryType="nt:unstructured">
-                    <properties
+                    <icon
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Properties"
+                            jcr:title="Icon"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -27,59 +27,46 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <sticky
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/switch"
-                                                    fieldLabel="Make Header Sticky"
-                                                    onText="Sticky"
-                                                    offText="Standard"
-                                                    name="./stickyHeader"/>
-                                            <headerColor
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Header Theme"
-                                                    name="./headerColor">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <white
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Light (Default)"
-                                                            value=""/>
-                                                    <dark
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Dark"
-                                                            value="beej-header--dark"/>
-                                                </items>
-                                            </headerColor>
-                                            <logoPrimary
+                                            <introIcon
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                                                     allowUpload="{Boolean}false"
                                                     autoStart="{Boolean}false"
                                                     class="cq-droptarget"
-                                                    fieldLabel="Header Logo"
-                                                    fieldDescription="Drop a logo from the DAM here"
+                                                    fieldLabel="Intro Slice Icon"
+                                                    fieldDescription="Drop an icon from the DAM here"
                                                     fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./headerLogo"
+                                                    fileReferenceParameter="./introSliceIcon"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
                                                     title="Primary Logo Upload"
                                                     useHTML5="{Boolean}true"/>
-                                            <logoPrimaryURL
+                                            <iconSize
                                                     jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                    fieldLabel="Logo URL"
-                                                    name="./logoURL"
-                                                    rootPath="/content"/>
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                    fieldLabel="Icon Size"
+                                                    name="./introSliceIconSize">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Large (Default)"
+                                                            value=""/>
+                                                    <small
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Small"
+                                                            value="beej-intro-slice__icon--small"/>
+                                                </items>
+                                            </iconSize>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </properties>
-                    <headerCta
+                    </icon>
+                    <content
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Header CTA"
+                            jcr:title="Content"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -92,22 +79,32 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
+                                            <introSliceTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Intro Slice Title"
+                                                    name="./introSliceTitle"/>
+                                            <introSliceText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Intro Slice Text"
+                                                    name="./introSliceText"/>
                                             <ctaURL
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
                                                     fieldLabel="CTA Path"
-                                                    name="./headerCTAPath"
+                                                    name="./introSliceCTAPath"
                                                     rootPath="/content"/>
                                             <ctaText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                     fieldLabel="CTA Text"
-                                                    name="./headerCTAText"/>
+                                                    name="./introSliceCTAText"/>
                                             <ctaColor
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
                                                     fieldLabel="CTA Color"
-                                                    name="./headerCTAColor">
+                                                    name="./introSliceCTAColor">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                             jcr:primaryType="nt:unstructured"
@@ -136,59 +133,7 @@
                                 </items>
                             </columns>
                         </items>
-                    </headerCta>
-                    <menuButton
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Menu Button"
-                            sling:resourceType="granite/ui/components/coral/foundation/container"
-                            margin="{Boolean}true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                    margin="{Boolean}true">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <menuIcon
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                                                    allowUpload="{Boolean}false"
-                                                    autoStart="{Boolean}false"
-                                                    class="cq-droptarget"
-                                                    fieldLabel="Menu Button Icon"
-                                                    fieldDescription="Drop an svg icon from the DAM here"
-                                                    fileNameParameter="./primaryMenuIcon"
-                                                    fileReferenceParameter="./menuIcon"
-                                                    mimeTypes="[image]"
-                                                    multiple="{Boolean}false"
-                                                    name="./file"
-                                                    title="Primary Logo Upload"
-                                                    useHTML5="{Boolean}true"/>
-                                            <closeIcon
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                                                    allowUpload="{Boolean}false"
-                                                    autoStart="{Boolean}false"
-                                                    class="cq-droptarget"
-                                                    fieldLabel="Menu Button Icon"
-                                                    fieldDescription="Drop an svg icon from the DAM here"
-                                                    fileNameParameter="./primaryCloseIcon"
-                                                    fileReferenceParameter="./closeIcon"
-                                                    mimeTypes="[image]"
-                                                    multiple="{Boolean}false"
-                                                    name="./file"
-                                                    title="Primary Logo Upload"
-                                                    useHTML5="{Boolean}true"/>
-
-                                        </items>
-                                    </column>
-                                </items>
-                            </columns>
-                        </items>
-                    </menuButton>
+                    </content>
                 </items>
             </tabs>
         </items>

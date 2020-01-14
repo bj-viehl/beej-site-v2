@@ -1,0 +1,44 @@
+.beej-intro-slice {
+  margin: 40px 0;
+
+  &__container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: $breakpoint-sm;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+
+    &--small {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__button {
+    justify-content: center;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin: 60px 0;
+
+    &__icon {
+      width: 200px;
+      height: 200px;
+      margin: 40px 0;
+
+      &--small {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 80px 0;
+  }
+}
