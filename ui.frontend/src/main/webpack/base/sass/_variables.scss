@@ -1,13 +1,20 @@
 // Variables
 
-$breakpoint-sm:                         768px;
-$breakpoint-md:                         900px;
-$breakpoint-lg:                        1200px;
+$breakpoint-sm:                            768px;
+$breakpoint-md:                            900px;
+$breakpoint-lg:                           1200px;
 
-$color-primary-blue:                  #0095ff;
-$color-primary-pink:                  #ff0076;
-$color-primary-purple:                #c30ae4;
+$color-primary-blue:                     #0095ff;
+$color-primary-blue-50:       rgba(0,149,255,.5);
+
+$color-primary-pink:                     #ff0076;
+$color-primary-pink-50:       rgba(255,0,118,.5);
+
+$color-primary-purple:                   #c30ae4;
+$color-primary-purple-50:     rgba(195,100,228,.5);
+
 $color-primary-orange:                #ff6a00;
+$color-primary-orange-50:     rgba(255,106,0,.5);
 
 $text-color:                          #646464;
 $text-color-dark:                     #343434;

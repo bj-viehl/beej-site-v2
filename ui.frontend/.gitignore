@@ -5,6 +5,3 @@ node_modules/
 npm-debug.log
 package-lock.json
 install.js
-
-static/index.html
-dist/clientlib-site/site.css

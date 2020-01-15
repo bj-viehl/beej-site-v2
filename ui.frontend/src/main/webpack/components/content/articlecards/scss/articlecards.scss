@@ -1,0 +1,60 @@
+.beej-articles {
+  padding: 40px 20px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  &__card {
+    background: {
+      blend-mode: multiply;
+      color: $color-ui-grey-medium-50;
+      position: center center;
+      size: cover;
+    }
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    height: 200px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin: 10px;
+
+    &:hover {
+      background-color: $color-primary-pink;
+      box-shadow: 0px 10px 5px -8px rgba(50,50,50,1);
+    }
+  }
+
+  &__card-title {
+    color: $color-white;
+    text-align: center;
+    width: 75%;
+  }
+
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 80px 10px;
+
+    &__card {
+      height: 300px;
+      width: calc(50% - 60px);
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    &__card {
+      width: calc(33.33% - 60px);
+    }
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    &__card {
+      width: calc(25% - 60px);
+    }
+  }
+}
