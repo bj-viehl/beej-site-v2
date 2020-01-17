@@ -1,5 +1,5 @@
 .beej-footer {
-  background: #343434;
+  background: $color-ui-grey-dark;
 
   &__container {
     display: flex;
@@ -18,7 +18,7 @@
   }
 
   &__nav-item {
-    color: #e6e6e6;
+    color: $text-color-light;
     margin: 0 10px;
     padding: 0 20px;
     font-weight: light;
@@ -33,6 +33,14 @@
 
   &__legal-text {
     font-size: .75rem;
+  }
+
+  &--light-theme {
+    background: $color-ui-grey-light;
+  }
+
+  &--black-theme {
+    background: $color-ui-black;
   }
 
   @media (min-width: $breakpoint-md) {

@@ -12,9 +12,9 @@
                     sling:resourceType="granite/ui/components/coral/foundation/tabs"
                     maximized="{Boolean}false">
                 <items jcr:primaryType="nt:unstructured">
-                    <logo
+                    <appearance
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Logo"
+                            jcr:title="Appearance"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -27,6 +27,26 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
+                                            <theme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Color Theme"
+                                                    name="./footerTheme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <dark
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Dark (Default)"
+                                                            value=""/>
+                                                    <light
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Light"
+                                                            value="beej-footer--light-theme"/>
+                                                    <black
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Black"
+                                                            value="beej-footer--black-theme"/>
+                                                </items>
+                                            </theme>
                                             <logoPrimary
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
@@ -53,7 +73,7 @@
                                 </items>
                             </columns>
                         </items>
-                    </logo>
+                    </appearance>
                     <nav
                             jcr:primaryType="nt:unstructured"
                             jcr:title="Nav Items"
