@@ -1,0 +1,32 @@
+<section class="beej-form-box ${properties.formBoxBackgroundColor} ${properties.formBoxMaxWidth}" style="background-image: url('${properties.formBoxBackgroundImage @ context='uri' }');">
+    <form class="beej-form-box__form margins ${properties.formTheme}">
+        <h4 class="beej-form-box__form-title">${properties.formBoxTitle}</h4>
+        <p class="beej-form-box__form-text">${properties.formBoxText}</p>
+        <div class="beej-form-box__form-container">
+<!--            <sly data-sly-resource="${'formbox' @ resourceType='foundation/components/parsys'}" data-sly-unwrap></sly>-->
+            <div class="beej-input-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+            <div class="beej-input-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="firstname" id="lastname">
+            </div>
+            <div class="beej-input-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" name="occupation" id="occupation">
+            </div>
+            <div class="beej-input-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="beej-input-group">
+                <label for="comment">Comments:</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div class="beej-form-button beej-button__container">
+                <a href="${properties.formButtonPath}" class="beej-button ${properties.formButtonColor}">${properties.formButtonText}</a>
+            </div>
+        </div>
+    </form>
+</section>
