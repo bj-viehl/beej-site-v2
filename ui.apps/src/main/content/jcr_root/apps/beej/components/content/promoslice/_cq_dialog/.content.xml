@@ -248,6 +248,11 @@
                                                             jcr:primaryType="nt:unstructured"
                                                             text="Purple"
                                                             value="beej-button--purple"/>
+
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-button--orange"/>
                                                 </items>
                                             </ctaColor>
                                         </items>
