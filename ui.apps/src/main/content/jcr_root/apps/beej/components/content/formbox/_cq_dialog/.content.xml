@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Form Box Options"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}false">
+                <items jcr:primaryType="nt:unstructured">
+                    <appearance
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Background"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <width
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Form Box Max Width"
+                                                    name="./formBoxMaxWidth">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fullWidth
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Full Width (Default)"
+                                                            value=""/>
+                                                    <large
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Max Width Lg 1200px"
+                                                            value="beej-hero--margins"/>
+                                                </items>
+                                            </width>
+                                            <backgroundImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    allowUpload="{Boolean}false"
+                                                    autoStart="{Boolean}false"
+                                                    class="cq-droptarget"
+                                                    fieldLabel="Background Image"
+                                                    fieldDescription="Drop a logo from the DAM here"
+                                                    fileNameParameter="./primaryLogo"
+                                                    fileReferenceParameter="./formBoxBackgroundImage"
+                                                    mimeTypes="[image]"
+                                                    multiple="{Boolean}false"
+                                                    name="./file"
+                                                    title="Primary Logo Upload"
+                                                    useHTML5="{Boolean}true"/>
+                                            <backgroundColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Background Overlay Color"
+                                                    name="./formBoxBackgroundColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Grey (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-form-box--pink-overlay"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-form-box--blue-overlay"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-form-box--purple-overlay"/>
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-form-box--orange-overlay"/>
+                                                </items>
+                                            </backgroundColor>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </appearance>
+                    <heroContent
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Form"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <formBoxTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Form Box Title"
+                                                    name="./formBoxTitle"/>
+                                            <formBoxText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Form Box Text"
+                                                    name="./formBoxText"/>
+                                            <formColorTheme
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Form Color Theme"
+                                                    name="./formTheme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Standard (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-form-box__form--background-pink"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-form-box__form--background-purple"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-form-box__form--background-blue"/>
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-form-box__form--background-blue"/>
+                                                </items>
+                                            </formColorTheme>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </heroContent>
+                    <cta
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Form Button"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <buttonURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Form Button Path"
+                                                    name="./formButtonPath"
+                                                    rootPath="/content"/>
+                                            <buttomText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Form Button Text"
+                                                    name="./formButtonText"/>
+                                            <buttonColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Form Button Color"
+                                                    name="./formButtonColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Grey (Default)"
+                                                            value=""/>
+                                                    <white
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="White"
+                                                            value="beej-button--white"/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-button--pink"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-button--blue"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-button--purple"/>
+                                                    <orange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Orange"
+                                                            value="beej-button--orange"/>
+                                                </items>
+                                            </buttonColor>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </cta>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

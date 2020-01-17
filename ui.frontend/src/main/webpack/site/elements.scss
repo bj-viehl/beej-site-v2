@@ -30,7 +30,7 @@ h2, .h2 {
   line-height: 1.1;
 
   @media (min-width: $breakpoint-md) {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 }
 
@@ -39,16 +39,16 @@ h3, .h3 {
   line-height: 1.1;
 
   @media (min-width: $breakpoint-md) {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.2;
 
   @media (min-width: $breakpoint-md) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -74,5 +74,40 @@ p {
 
   &:last-of-type {
     margin: 0;
+  }
+}
+
+input {
+  height: calc(50px - 20px);
+}
+
+textarea {
+    height: 100px;
+}
+
+input, textarea {
+  background: $color-white;
+  border-radius: 3px;
+  color: $text-color;
+  width: calc(100% - 20px);
+  border: 1px solid $color-ui-grey-medium-50;
+  outline: none;
+  transition: all .125s ease-in-out;
+  font-size: 18px;
+  padding: 10px;
+
+  &:focus {
+    border: 1px solid $color-ui-grey-medium;
+  }
+}
+
+.beej-input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+
+  @media (min-width: $breakpoint-md) {
+    width: calc(50% - 20px);
   }
 }

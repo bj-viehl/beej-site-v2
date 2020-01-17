@@ -1,0 +1,135 @@
+.beej-form-box {
+  padding: 20px;
+  background: {
+    blend-mode: multiply;
+    color: $color-ui-grey-medium-50;
+    position: center center;
+    size: cover;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__form {
+    background: $color-white-75;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+    max-width: $breakpoint-md;
+    align-items: center;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .beej-form-box__form-title {
+      color: $text-color;
+      text-align: center;
+    }
+
+    .beej-form-box__form-text {
+      color: $text-color;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .beej-form-button {
+      width: 100%;
+      flex-grow: 1;
+      margin: 0 10px;
+    }
+
+    .beej-button {
+      width: 100%;
+    }
+
+    &--background-blue {
+      background: $color-primary-blue;
+
+      .beej-form-box__form-title {
+        color: $color-white;
+      }
+
+      .beej-form-box__form-text {
+        color: $color-white;
+      }
+    }
+
+    &--background-pink {
+      background: $color-primary-pink;
+
+      .beej-form-box__form-title {
+        color: $color-white;
+      }
+
+      .beej-form-box__form-text {
+        color: $color-white;
+      }
+    }
+
+    &--background-purple {
+      background: $color-primary-purple;
+
+      .beej-form-box__form-title {
+        color: $color-white;
+      }
+
+      .beej-form-box__form-text {
+        color: $color-white;
+      }
+    }
+  }
+
+  // Background Color Overly Options
+  &--pink-overlay {
+    background-color: $color-primary-pink;
+  }
+
+  &--blue-overlay {
+    background-color: $color-primary-blue;
+  }
+
+  &--purple-overlay {
+    background-color: $color-primary-purple;
+  }
+
+  &--orange-overlay {
+    background-color: $color-primary-orange;
+  }
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 60px;
+
+    .beej-form-box__form-title {
+      margin-bottom: 20px;
+    }
+
+    .beej-form-box__form-text {
+      width: 80%;
+    }
+
+    &__form {
+      padding: 60px 40px;
+    }
+
+    .beej-form-button {
+      justify-content: center;
+    }
+
+    .beej-button {
+      width: 50%;
+    }
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    padding: 80px;
+
+    .beej-form-button {
+      margin-top: 20px;
+    }
+  }
+}
