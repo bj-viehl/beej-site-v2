@@ -72,8 +72,8 @@ buildNumber.properties
 
 ## Node ##
 node_modules
-package.json
-package-lock.json
+ui.frontend/package.json
+ui.frontend/package-lock.json
 
 ### Vault ###
 .vlt
@@ -84,4 +84,4 @@ package-lock.json
 
 ## Webpack ##
 ui.frontend/src/main/webpack/static/index.html
-ui.frontend/dist/clientlib-site/site.css
+ui.frontend/dist/
