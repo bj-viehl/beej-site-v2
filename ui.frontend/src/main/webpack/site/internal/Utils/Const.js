@@ -16,9 +16,6 @@ NS('beej').Const = (function() {
             xl: 1200,
             xxl: 1900
         },
-        ENDPOINTS: {
-
-        },
         FALSE: 'false',
         JSON_EXTENSION: '.json',
         MONTHS: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
