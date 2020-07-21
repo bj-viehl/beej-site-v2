@@ -2,7 +2,7 @@
  *
  * @type {{getCurrentBP: (function(): string)}}
  */
-NS('medically').ResponsiveHandler = (function() {
+NS('beej').ResponsiveHandler = (function() {
     'use strict';
     var CONST = beej.Const;
 
