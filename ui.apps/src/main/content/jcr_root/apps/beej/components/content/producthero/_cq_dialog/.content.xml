@@ -14,7 +14,7 @@
                 <items jcr:primaryType="nt:unstructured">
                     <properties
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Info"
+                            jcr:title="CTA"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -27,20 +27,44 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <productTitle
+                                            <ctaText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Product Title"
-                                                    name="./productTitle"/>
+                                                    fieldLabel="Button Text"
+                                                    name="./buttonText"/>
+                                            <ctaColor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Button Color"
+                                                    name="./buttonColor">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Default (Default)"
+                                                            value=""/>
+                                                    <pink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Pink"
+                                                            value="beej-button--pink"/>
+                                                    <blue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Blue"
+                                                            value="beej-button--blue"/>
+                                                    <purple
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Purple"
+                                                            value="beej-button--purple"/>
+                                                </items>
+                                            </ctaColor>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
                     </properties>
-                    <featureOne
+                    <imageOne
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Feature 1"
+                            jcr:title="Image 1"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -53,75 +77,40 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <featureIcon
+                                            <image
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                                                     allowUpload="{Boolean}false"
                                                     autoStart="{Boolean}false"
                                                     class="cq-droptarget"
-                                                    fieldLabel="Feature Icon"
-                                                    fieldDescription="Drop an icon from the DAM here"
-                                                    fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./featureIcon1"
+                                                    fieldLabel="Product Image"
+                                                    fieldDescription="Drop an image from the DAM here"
+                                                    fileNameParameter="./primaryImage"
+                                                    fileReferenceParameter="./productImage1"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
                                                     title="Primary Logo Upload"
                                                     useHTML5="{Boolean}true"/>
-                                            <featureTitle
+                                            <Title
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature Title"
-                                                    name="./featureTitle1"/>
-                                            <featureText
+                                                    fieldLabel="Product Image Title"
+                                                    name="./productImageTitle1"/>
+                                            <altText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                    fieldLabel="Feature Text"
-                                                    name="./featureText1"/>
-                                            <ctaURL
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                    fieldLabel="Feature CTA Path"
-                                                    name="./featureCTAPath1"
-                                                    rootPath="/content"/>
-                                            <ctaText
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature CTA Text"
-                                                    name="./featureCTAText1"/>
-                                            <ctaColor
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="CTA Color"
-                                                    name="./featureCTAColor1">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <default
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
-                                                            value=""/>
-                                                    <pink
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Pink"
-                                                            value="beej-button--pink"/>
-                                                    <blue
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Blue"
-                                                            value="beej-button--blue"/>
-                                                    <purple
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Purple"
-                                                            value="beej-button--purple"/>
-                                                </items>
-                                            </ctaColor>
+                                                    fieldLabel="Product Image Alt Text"
+                                                    name="./productImageAltText1"/>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </featureOne>
-                    <featureTwo
+                    </imageOne>
+                    <imageTwo
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Feature 2"
+                            jcr:title="Image 2"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -134,79 +123,40 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <featureIcon
+                                            <image
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                                                     allowUpload="{Boolean}false"
                                                     autoStart="{Boolean}false"
                                                     class="cq-droptarget"
-                                                    fieldLabel="Feature Icon"
-                                                    fieldDescription="Drop an icon from the DAM here"
-                                                    fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./featureIcon2"
+                                                    fieldLabel="Product Image"
+                                                    fieldDescription="Drop an image from the DAM here"
+                                                    fileNameParameter="./primaryImage"
+                                                    fileReferenceParameter="./productImage2"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
                                                     title="Primary Logo Upload"
                                                     useHTML5="{Boolean}true"/>
-                                            <featureTitle
+                                            <title
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature Title"
-                                                    name="./featureTitle2"/>
-                                            <featureText
+                                                    fieldLabel="Product Image Title"
+                                                    name="./productImageTitle2"/>
+                                            <altTex
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                    fieldLabel="Feature Text"
-                                                    name="./featureText2"/>
-                                            <ctaURL
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                    fieldLabel="Feature CTA Path"
-                                                    name="./featureCTAPath2"
-                                                    rootPath="/content"/>
-                                            <ctaText
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature CTA Text"
-                                                    name="./featureCTAText2"/>
-                                            <ctaColor
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="CTA Color"
-                                                    name="./featureCTAColor2">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <default
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
-                                                            value=""/>
-                                                    <pink
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Pink"
-                                                            value="beej-button--pink"/>
-                                                    <blue
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Blue"
-                                                            value="beej-button--blue"/>
-                                                    <purple
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Purple"
-                                                            value="beej-button--purple"/>
-                                                    <orange
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Orange"
-                                                            value="beej-button--orange"/>
-                                                </items>
-                                            </ctaColor>
+                                                    fieldLabel="Product Image Alt Text"
+                                                    name="./productImageAltText2"/>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </featureTwo>
-                    <featureThree
+                    </imageTwo>
+                    <imageThree
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Feature 3"
+                            jcr:title="Image 3"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
@@ -219,76 +169,37 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <featureIcon
+                                            <image
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                                                     allowUpload="{Boolean}false"
                                                     autoStart="{Boolean}false"
                                                     class="cq-droptarget"
-                                                    fieldLabel="Feature Icon"
-                                                    fieldDescription="Drop an icon from the DAM here"
-                                                    fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./featureIcon3"
+                                                    fieldLabel="Product Image"
+                                                    fieldDescription="Drop an image from the DAM here"
+                                                    fileNameParameter="./primaryImage"
+                                                    fileReferenceParameter="./productImage3"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
                                                     title="Primary Logo Upload"
                                                     useHTML5="{Boolean}true"/>
-                                            <featureTitle
+                                            <title
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature Title"
-                                                    name="./featureTitle3"/>
-                                            <featureText
+                                                    fieldLabel="Product Image Title"
+                                                    name="./productImageTitle3"/>
+                                            <altText
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                    fieldLabel="Feature Text"
-                                                    name="./featureText3"/>
-                                            <ctaURL
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                    fieldLabel="Feature CTA Path"
-                                                    name="./featureCTAPath3"
-                                                    rootPath="/content"/>
-                                            <ctaText
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature CTA Text"
-                                                    name="./featureCTAText3"/>
-                                            <ctaColor
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="CTA Color"
-                                                    name="./featureCTAColor3">
-                                                <items jcr:primaryType="nt:unstructured">
-                                                    <default
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Default (Default)"
-                                                            value=""/>
-                                                    <pink
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Pink"
-                                                            value="beej-button--pink"/>
-                                                    <blue
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Blue"
-                                                            value="beej-button--blue"/>
-                                                    <purple
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Purple"
-                                                            value="beej-button--purple"/>
-                                                    <orange
-                                                            jcr:primaryType="nt:unstructured"
-                                                            text="Orange"
-                                                            value="beej-button--orange"/>
-                                                </items>
-                                            </ctaColor>
+                                                    fieldLabel="Image Alt Text"
+                                                    name="./productImageAltText3"/>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </featureThree>
+                    </imageThree>
                 </items>
             </tabs>
         </items>

@@ -1,3 +1,11 @@
 .beej-product-hero {
-  display: flex;
+  
+  @media (min-width: 900px) {
+      display: flex;
+
+      &__image-viewer {
+          width: 50%;
+      }
+  }
+
 }

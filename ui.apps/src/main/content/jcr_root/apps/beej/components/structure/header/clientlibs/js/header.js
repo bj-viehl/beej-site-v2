@@ -6,7 +6,7 @@ NS('beej.UI').Header = beej.UI.BaseClass.extend(
             /**
              * @function setup
              * @description Initializes the current class instance.
-             * @memberOf beej.UI.Accordion.
+             * @memberOf beej.UI.Header.
              * @returns {}
              */
             setup: function() {
